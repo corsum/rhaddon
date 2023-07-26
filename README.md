@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="image.png" width="17%">
+<img src="Projekt bez nazwy.png" width="17%">
 
-# Cx
+# CCross
 Low level procedural programming language 
 </div>
 
-**Cx** is 
+**CCross** is 
