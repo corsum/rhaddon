@@ -1,7 +1,7 @@
 <div align="center">
 
-# Rhaddon
+# Cx
 Low level procedural programming language 
 </div>
 
-**Rhaddon** is 
+**Cx** is 
