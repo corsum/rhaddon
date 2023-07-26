@@ -2,8 +2,8 @@
 
 <img src="Projekt bez nazwy.png" width="17%">
 
-# CCross
+# Rhaddon
 Low level procedural programming language 
 </div>
 
-**CCross** is 
+**Rhaddon** is 
