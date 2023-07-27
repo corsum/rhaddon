@@ -11,5 +11,10 @@
 
 # Install
 > *Coming Soon*
+
+# Contact
+- Twitter: [@popeqkacper](https://twitter.com/popeqkacper)
+- Author: Kacper Popek
+
 # License
 GNU General Public License v3.0
