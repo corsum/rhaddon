@@ -14,6 +14,7 @@
 
 ## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper)
+- Reddit : [kacperaan](https://reddit.com/u/kacperaan)
 - Author: Kacper Popek
 
 ## License
