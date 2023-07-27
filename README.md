@@ -7,10 +7,10 @@
 </div>
 
  ## Rhaddon - Introduction
-**Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for
+**Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for handling 
 
 ## Install
-> *Coming Soon*
+> *COMING SOON*
 
 ## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper) 
