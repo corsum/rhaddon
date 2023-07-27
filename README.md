@@ -6,15 +6,15 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 </div>
 
- # Rhaddon - Introduction
+ ## Rhaddon - Introduction
 **Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for
 
-# Install
+## Install
 > *Coming Soon*
 
-# Contact
+## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper)
 - Author: Kacper Popek
 
-# License
+## License
 GNU General Public License v3.0
