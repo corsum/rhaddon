@@ -9,6 +9,7 @@
  # Rhaddon - Introduction
 **Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for
 
-
+# Install
+> *Coming Soon*
 # License
 GNU General Public License v3.0
