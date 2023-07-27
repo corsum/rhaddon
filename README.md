@@ -8,7 +8,7 @@
 </div>
 
  # Rhaddon - Introduction
-**Rhaddon** is low level open-source functional programming language developed in C.
+**Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for
 
 
 <div align="center">
