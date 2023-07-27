@@ -7,7 +7,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 </div>
 
-# Rhaddon - Introduction
+ # Rhaddon - Introduction
 **Rhaddon** is low level functional programming language developed in C
 
 
