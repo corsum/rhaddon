@@ -5,7 +5,7 @@
    ## Rhaddon - Contribution
 </div>
 
-Thank ***you*** for your interest in contributing to MatrixForge! Our goal is to create high-quality multi-language tool that will be useful to the open source community. Every contribution is valuable and we appreciate anyone who is interested in contributing to the project.
+Thank ***you*** for your interest in contributing to Rhaddon! Our goal is to create high-quality multi-language tool that will be useful to the open source community. Every contribution is valuable and we appreciate anyone who is interested in contributing to the project.
 
 ## Steps:
 - Make sure you have the latest version of the repository.
