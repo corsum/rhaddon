@@ -7,7 +7,7 @@
 </div>
 
  ## Rhaddon - Introduction
-**Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for handling 
+**Rhaddon** is a low-level, open-source functional programming language written in C. It is mainly intended for users of low-level languages ​​such as c, who appreciate code execution speed, minimalism, and a wide range of code development possibilities and also built-in garbage collector and automatic memory management to prevent memory issues.
 
 ## Installation
 > *COMING SOON*
