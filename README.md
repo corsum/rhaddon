@@ -14,12 +14,17 @@
 
 ## Basic syntax
 ```c
->> using <main.rhm>
->> main(){
->>  scons "Hello World!";
+>>> using <main.rhm>
+>>> main(){
+>>>  scons "Hello World!";
 }
-
+```
+### Compile
+```c
 $ rhaddon -cm main.rh
+```
+### Run
+```c
 $ rhaddon -r main.rh
 ```
 
