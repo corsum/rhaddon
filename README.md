@@ -13,7 +13,7 @@
 > *COMING SOON*
 
 ## Basic syntax
-```c
+```
 >>> using <main.rhm>
 >>> main(){
 >>>  scons "Hello World!";
