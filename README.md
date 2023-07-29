@@ -19,11 +19,11 @@
 >>>  scons "Hello World!";
 }
 ```
-### Compile
+### Compile existing code
 ```c
 $ rhaddon -cm main.rh
 ```
-### Run
+### Run compiled code
 ```c
 $ rhaddon -r main.rh
 ```
