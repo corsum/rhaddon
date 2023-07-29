@@ -2,7 +2,7 @@
 
 <img src="branding\logo.png" width="17%">
 
-## A low level procedural programming language 
+## A mid-level procedural programming language 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 </div>
 
