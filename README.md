@@ -9,8 +9,18 @@
  ## Rhaddon - Introduction
 **Rhaddon** is low level open-source functional programming language developed in C. It is built mainly for handling 
 
-## Install
+## Installation
 > *COMING SOON*
+
+## Basic syntax
+```
+>>> using <main.rhm>
+>>> main(){
+ scons "Hello World!";
+}
+$ rhaddon -cm main.rh
+$ rhaddon -r main.rh
+```
 
 ## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper) 
