@@ -13,11 +13,12 @@
 > *COMING SOON*
 
 ## Basic syntax
-```
->>> using <main.rhm>
->>> main(){
- scons "Hello World!";
+```c
+>> using <main.rhm>
+>> main(){
+>>  scons "Hello World!";
 }
+
 $ rhaddon -cm main.rh
 $ rhaddon -r main.rh
 ```
