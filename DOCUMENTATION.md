@@ -1,5 +1,5 @@
 <div align="center">
- <img src="/branding/logo1.png" width="17%"></img>
+ <img src="branding\logo.png" width="17%"></img>
 </div>
  
 ## <div align="center">Rhaddon Documentation</div>
