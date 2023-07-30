@@ -1,9 +1,9 @@
 <div align="center">
 
   <img src="branding\logo.png" width="17%">
+   </div>
    
    ## Rhaddon - Contribution
-</div>
 
 Thank ***you*** for your interest in contributing to Rhaddon! Our goal is to create high-quality multi-language tool that will be useful to the open source community. Every contribution is valuable and we appreciate anyone who is interested in contributing to the project.
 
