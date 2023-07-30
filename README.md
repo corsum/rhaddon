@@ -15,9 +15,8 @@
 ## Basic syntax
 ```
 >>> using <main.rhm>
->>> main(){
->>>  scons "Hello World!";
-}
+>>> int main(){
+>>>   scons "Hello World!";}
 ```
 ### Compile existing code
 ```c
