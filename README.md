@@ -36,3 +36,4 @@ $ rhaddon -r main.rh
 GNU General Public License v3.0
 
 ## Wiki
+<a href="https://github.com/corsum/rhaddon/wiki">Rhaddon Wiki</a>
