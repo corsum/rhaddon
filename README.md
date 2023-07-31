@@ -34,3 +34,5 @@ $ rhaddon -r main.rh
 
 ## License
 GNU General Public License v3.0
+
+## Wiki
