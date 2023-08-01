@@ -7,7 +7,7 @@
 </div>
 
  ## Rhaddon - Introduction
- **Rhaddon** is a mid-level, open-source procedural programming language developed in C. It is mainly intended for users of other mid-level languages ​​such as C or C++, who value code execution speed, minimalism, and a wide range of code development possibilities and built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
+ **Rhaddon** is a mid-level, open-source procedural programming language developed in C. It is mainly intended for users of other mid-level languages ​​such as C or C++, who value code execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
 
 ## Installation
 > COMING SOON
