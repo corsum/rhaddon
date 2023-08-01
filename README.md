@@ -33,7 +33,7 @@ $ rhaddon -r main.rh
 - Author: Kacper Popek
 
 ## License
-GNU General Public License v3.0
+<a href="LICENSE">GNU General Public License v3.0</a>
 
 ## Wiki
 <a href="https://github.com/corsum/rhaddon/wiki">Rhaddon Wiki</a>
