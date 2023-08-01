@@ -30,7 +30,7 @@ $ rhaddon -r main.rh
 ## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper) 
 - Reddit : [kacperaan](https://reddit.com/u/kacperaan)
-- Author: Kacper Popek
+- Author: [Kacper Popek](https://github.com/kacperaan)
 
 ## License
 <a href="LICENSE">GNU General Public License v3.0</a>
