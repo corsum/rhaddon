@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="branding\logo.png" width="17%">
+<a href="github.com/corsum/rhaddon"><img src="branding\logo.png" width="17%"></a>
 
 ## A mid-level procedural programming language 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
