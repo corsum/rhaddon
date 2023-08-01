@@ -16,7 +16,8 @@
 ```
 >>> using <main.rhm>
 >>> int main(){
->>>   scons "Hello World!";}
+>>>   scons "Hello World!";
+}
 ```
 ### Compile existing code
 ```c
