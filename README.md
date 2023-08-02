@@ -21,11 +21,11 @@
 ```
 ### Compile existing code
 ```c
-$ rhaddon -cm main.rh
+$ rhaddon -cm main main.rh
 ```
 ### Run compiled code
 ```c
-$ rhaddon -r main.rh
+$ rhaddon -r main
 ```
 
 ## Contact
