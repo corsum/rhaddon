@@ -1,7 +1,7 @@
 <div align="center">
 
-<img src="logo.png" width="17%">
+<img src="logo1.png" width="17%">
 </div>
 
 ## Rhaddon - Logo Guidelines
-**Rhaddon** logo contains of white lambda letter from Greek alphabet.
+**Rhaddon** logo contains of 2 white arrows pointing up 1 in another 
