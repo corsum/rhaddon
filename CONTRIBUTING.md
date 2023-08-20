@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="branding\logo1.png" width="17%">
+  <img src="branding\logo2.png" width="17%">
    </div>
    
    ## Rhaddon - Contribution
