@@ -1,0 +1,8 @@
+using <main.rm>
+using <random.rm>
+namespace "main"
+
+new Random = random;
+
+void main(void){
+}

@@ -1,0 +1,49 @@
+-- DATATYPES --
+bool
+const
+double
+enum
+float
+int
+string
+struct
+void
+
+-- KEYWORDS --
+break
+case
+continue
+default
+else
+extern
+for
+if
+namespace
+return
+switch
+while
+
+-- STATEMENTS --
+True
+False
+Null
+
+macro  
+  In "macro.rhm": 
+    macro mymacro(){
+    }
+
+thread 
+  thread "mythread"
+
+extend 
+  extend "main.c"
+
+-- ERRORS --
+EOL Error:
+  File 'main.rh' In line 66: 'int x == 3 '
+    Missing semicolon                   ~~ 
+
+Name Error:
+  File 'main.rh' In line 66: 'using <mai.rhm>'
+    Undefined filename                ~~~~~
