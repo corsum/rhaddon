@@ -29,6 +29,9 @@ $ rhaddon -cm main main.rh
 $ rhaddon -r main
 ```
 
+## Contributors
+![GitHub Contributors Image](https://contrib.rocks/image?repo=corsum/rhaddon)
+
 ## Contact
 - Twitter: [@popeqkacper](https://twitter.com/popeqkacper) 
 - Reddit : [kacperaan](https://reddit.com/u/kacperaan)
