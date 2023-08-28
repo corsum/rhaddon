@@ -25,11 +25,11 @@
 ```
 ### Compile existing code
 ```c
-$ rhaddon -cm main main.rh
+$ rhad -cm main main.rh
 ```
 ### Run compiled code
 ```c
-$ rhaddon -r main
+$ rhad -r main
 ```
 
 ## Contributors
