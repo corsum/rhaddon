@@ -24,6 +24,5 @@ Thank ***you*** for your interest in contributing to Rhaddon! Our goal is to cre
 
 - Expect team members to review your code.
 
-## Coding style:
-- Use PEP8 as a coding style
+- Remember to use PEP8 as coding style
 
