@@ -19,6 +19,7 @@
 ## Basic syntax
 ```
 >>> using <main.rhm>
+>>> namespace HelloWord;
 >>> void main(void){
 >>>   scons -- "Hello World!";
 }
