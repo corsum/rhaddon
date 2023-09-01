@@ -14,6 +14,8 @@
 ## Installation
 ### Windows
 > COMING SOON
+### MacOs
+> COMING SOON
 ### Linux
 > COMING SOON
 
