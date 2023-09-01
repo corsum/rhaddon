@@ -1,10 +1,4 @@
 ## Installation
-
-### Windows
-> COMING SOOn
-### MacOs
-> COMING SOON
-### Linux
 **Build from source** 
 Clone the repository
 ```c
