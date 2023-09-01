@@ -13,11 +13,14 @@
 
 ## Installation
 ### Windows
-> COMING SOON
+> COMING SOOn
 ### MacOs
 > COMING SOON
 ### Linux
-> COMING SOON
+Clone the repository
+```c
+$ git clone "https://github.com/corsum/rhaddon.git"
+```
 
 ## Basic syntax
 ```
