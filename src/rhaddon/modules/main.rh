@@ -1,0 +1,7 @@
+// This is example Rhaddon program that prints 'Hello World!' in the terminal.
+
+using <main.rhm>
+
+void main(void){
+  scons -- "Hello World!";
+}

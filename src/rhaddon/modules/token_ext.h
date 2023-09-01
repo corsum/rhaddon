@@ -45,46 +45,28 @@ tokenCONST token;
 // Check for variable tokens
 
 void checkToken(char *tokenCHECK){
-   if(strcmp(tokenCHECK, "int") == 0   || strcmp(tokenCHECK, "bool") == 0   ||
-      strcmp(tokenCHECK, "const") == 0 || strcmp(tokenCHECK, "string") == 0 ||
-      strcmp(tokenCHECK, "float") == 0 || strcmp(tokenCHECK, "void") == 0   ||
-      strcmp(tokenCHECK, "enum") == 0  || strcmp(tokenCHECK, "struct") == 0 ||
-      strcmp(tokenCHECK, "double") == 0
-   ){token.tokenSort = TOK_VAR;}
-
-   else if(strcmp(tokenCHECK, "=") == 0  || strcmp(tokenCHECK, "==") == 0 ||
-           strcmp(tokenCHECK, "!") == 0  || strcmp(tokenCHECK, "!=") == 0 ||
-           strcmp(tokenCHECK, "/") == 0  || strcmp(tokenCHECK, "/=") == 0 ||
-           strcmp(tokenCHECK, "+") == 0  || strcmp(tokenCHECK, "+=") == 0 ||
-           strcmp(tokenCHECK, "%") == 0  || strcmp(tokenCHECK, "%=") == 0 ||
-           strcmp(tokenCHECK, ">") == 0  || strcmp(tokenCHECK, ">=") == 0 ||
-           strcmp(tokenCHECK, "<") == 0  || strcmp(tokenCHECK, "<=") == 0 ||
-           strcmp(tokenCHECK, "@") == 0  || strcmp(tokenCHECK, "@=") == 0 ||
-           strcmp(tokenCHECK, "&&") == 0 || strcmp(tokenCHECK, "&=") == 0 ||
-           strcmp(tokenCHECK, "||") == 0 || strcmp(tokenCHECK, "|=") == 0
-   ){token.tokenSort = TOK_OPER;}
-   
-   else if(strcmp(tokenCHECK, "(") == 0  || strcmp(tokenCHECK, ")") == 0 ||
-           strcmp(tokenCHECK, "{") == 0  || strcmp(tokenCHECK, "}") == 0 ||
-           strcmp(tokenCHECK, "[") == 0  || strcmp(tokenCHECK, "]") == 0 ||
-           strcmp(tokenCHECK, "\"") == 0 || strcmp(tokenCHECK, "'") == 0 ||
-           strcmp(tokenCHECK, ".") == 0  || strcmp(tokenCHECK, ",") == 0 ||
-           strcmp(tokenCHECK, ":") == 0  || strcmp(tokenCHECK, ";") == 0 
-   ){token.tokenSort = TOK_SEPAR;}
+  char *VAR[9] = {"int","bool","const","string","float","void","enum","struct","double"};
+  char *OP[12] = {"=", "!", "*","/","+","-", "%", ">","<","@", "&", "|"};  
+  char *SEP[12] = {"(",")","{","}","[","]","\"","'",".",",",":",";"};  
+  char *KEY[12] = {"using","switch","case","namespace","return","if","else","break","and","while","for","continue"};  
  
-   else if(strcmp(tokenCHECK, "using") == 0  || strcmp(tokenCHECK, "switch") == 0    ||
-           strcmp(tokenCHECK, "case") == 0   || strcmp(tokenCHECK, "namespace") == 0 ||
-           strcmp(tokenCHECK, "return") == 0 || strcmp(tokenCHECK, "if") == 0        ||
-           strcmp(tokenCHECK, "else") == 0   || strcmp(tokenCHECK, "break") == 0     ||
-           strcmp(tokenCHECK, "and") == 0    || strcmp(tokenCHECK, "while") == 0     ||
-           strcmp(tokenCHECK, "for") == 0    || strcmp(tokenCHECK, "continue") == 0 
-   ){token.tokenSort = TOK_KEY;}
-   
-   else{
-     token.tokenSort = TOK_NONE;
-     }
-      
-   char *tokenstr;
+  for(int i = 0; i < 9; i++){
+    if(strcmp(tokenCHECK, VAR[i]) == 0){
+     token.tokenSort = TOK_VAR; 
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, OP[i]) == 0){
+     token.tokenSort = TOK_OPER;
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, SEP[i]) == 0){
+     token.tokenSort = TOK_SEPAR;
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, KEY[i]) == 0){
+     token.tokenSort = TOK_KEY;
+   }}
+  char *tokenstr;
    switch (token.tokenSort){
       case 0:
         tokenstr = "TOK_VAR";
