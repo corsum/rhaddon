@@ -21,6 +21,10 @@ Clone the repository
 ```c
 $ git clone "https://github.com/corsum/rhaddon.git"
 ```
+Move to the location
+```c
+cd rhaddon
+```
 
 ## Basic syntax
 ```
