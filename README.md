@@ -12,6 +12,7 @@
  **Rhaddon** is a C-like high-level, open-source procedural programming language, it is mainly intended for users who value execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
 
 ## Installation
+See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTALLATION.md</a>
 
 ## Basic syntax
 ```
