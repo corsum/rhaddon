@@ -17,13 +17,18 @@
 ### MacOs
 > COMING SOON
 ### Linux
+**Build from source** 
 Clone the repository
 ```c
 $ git clone "https://github.com/corsum/rhaddon.git"
 ```
 Move to the location
 ```c
-cd rhaddon
+$ cd rhaddon
+```
+Then type the following command
+```c
+$ ./build
 ```
 
 ## Basic syntax
