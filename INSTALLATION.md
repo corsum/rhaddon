@@ -14,6 +14,7 @@ Step 3.Type the following command
 $ ./build
 ```
 **Uninstall**
+
 To unistall Rhaddon from your computer type the command below
 ```c
 $ ./unst
