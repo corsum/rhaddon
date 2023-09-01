@@ -12,29 +12,6 @@
  **Rhaddon** is a C-like high-level, open-source procedural programming language, it is mainly intended for users who value execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
 
 ## Installation
-### Windows
-> COMING SOOn
-### MacOs
-> COMING SOON
-### Linux
-**Build from source** 
-Clone the repository
-```c
-$ git clone "https://github.com/corsum/rhaddon.git"
-```
-Move to repository directory
-```c
-$ cd rhaddon
-```
-Then type the following command
-```c
-$ ./build
-```
-**Uninstall**
-To unistall Rhaddon from your computer type the command below
-```c
-$ ./unst
-```
 
 ## Basic syntax
 ```
