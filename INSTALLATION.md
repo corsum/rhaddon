@@ -1,14 +1,15 @@
 ## Installation
-**Build from source** 
-Clone the repository
+**Build from source**
+
+Step 1.Clone the repository
 ```c
 $ git clone "https://github.com/corsum/rhaddon.git"
 ```
-Move to repository directory
+Step 2.Move to repository directory
 ```c
 $ cd rhaddon
 ```
-Then type the following command
+Step 3.Type the following command
 ```c
 $ ./build
 ```
