@@ -9,7 +9,7 @@
 </div>
 
  ## Rhaddon - Introduction
- **Rhaddon** is a high-level, open-source procedural programming language, it is mainly intended for users who value code execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
+ **Rhaddon** is a C-like high-level, open-source procedural programming language, it is mainly intended for users who value execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
 
 ## Installation
 ### Windows
