@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+  exit 1
+fi
+
+argument="$1"
+filename="$2"
+
+case "$argument" in
+  "-cm")
+    echo "compiling $filename"
+    ;;
+  "-r")
+    echo "running $filename"
+    ;;
+  *)
+    echo "Unefined argument: $argument"
+    ;;
+esac
+

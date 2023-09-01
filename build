@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo cp rhad /usr/bin
