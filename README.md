@@ -15,7 +15,7 @@
 See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTALLATION.md</a>
 
 ## Basic syntax
-main.rh
+**main.rh**
 ```
 >>> using <main.rhm>
 >>> namespace HelloWorld;
