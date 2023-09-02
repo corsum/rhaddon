@@ -15,8 +15,10 @@
 See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTALLATION.md</a>
 
 ## Basic syntax
+main.rh
 ```
 >>> using <main.rhm>
+>>> namespace HelloWorld;
 >>> void main(void){
 >>>   scons -- "Hello World!";
 }
