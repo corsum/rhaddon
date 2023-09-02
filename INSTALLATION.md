@@ -20,7 +20,11 @@ $ rhad
 
 **Uninstall**
 
-To unistall Rhaddon from your computer type the command below
+Step 1.Move to the Rhaddon repo
+```c
+$ cd rhaddon
+```
+Step 2.Type the command below
 ```c
 $ ./unst
 ```
