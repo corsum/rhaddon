@@ -13,6 +13,11 @@ Step 3.Type the following command
 ```c
 $ ./build
 ```
+Step 4.Open terminal and type 'rhad' to check if it works
+```c
+$ rhad
+```
+
 **Uninstall**
 
 To unistall Rhaddon from your computer type the command below
