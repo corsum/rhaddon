@@ -1,3 +1,5 @@
 # Rhaddon files
 * text=auto
-*.rh     binary
+*.rh     text
+*.rhh    text
+*.rhm    text
