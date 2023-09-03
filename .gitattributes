@@ -43,6 +43,7 @@
 *.app   binary
 # Apply override to all files in the directory
 *.md linguist-detectable
+*.yml linguist-detectable
 # Basic .gitattributes for a Vim repo.
 # Vim on Linux works with LF only, Vim on Windows works with both LF and CRLF
 
