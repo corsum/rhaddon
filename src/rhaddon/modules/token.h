@@ -91,8 +91,8 @@ typedef enum tokenTYPE{
   USING,  
   SWITCH,    
   CASE,      
-  GOTO,      
   RETURN,
+  NAMESPACE,
   IF,
   ELSE,
   ELIF,
@@ -102,7 +102,11 @@ typedef enum tokenTYPE{
   WHILE,
   FOR,
   BREAK,
-  CONTINUE
+  CONTINUE,
 
+// LITERALS
+  TRUE,
+  FALSE,
+  NONE 
 }tokenTYPE;
 #endif
