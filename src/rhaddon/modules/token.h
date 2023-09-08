@@ -25,13 +25,13 @@
 #include "token_ext.h"
 
 typedef enum tokenSORT{
-   TOK_VAR,    // int, bool, const, char, float, double, union, struct, enum, func, typedef 
-   TOK_OPER,   // =, ==, !, !=, *, *=, /, /=, +, +=, -, -=, %, %=, >, >=, <, <=, &, &=, @, @=, ., ,,:
-   TOK_SEPAR,  // ( ,), { ,} ,[ ,], ", ', ;
-   TOK_KEY,    // using, switch, case, goto, return, if, else, elif, or, not, and, while, for, break, continue
-   TOK_NUM,    // 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
-   TOK_ALPHA,  // a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
-   TOK_STAT    // True, False, NULL
+   TOK_VAR,    
+   TOK_OPER,   
+   TOK_SEPAR, 
+   TOK_KEY,    
+   TOK_NUM,    
+   TOK_ALPHA, 
+   TOK_LIT  
 }tokenSORT;
 
 typedef enum tokenTYPE{
@@ -107,6 +107,8 @@ typedef enum tokenTYPE{
 // LITERALS
   TRUE,
   FALSE,
-  NONE 
+  NONE,
+  FP,
+  STR 
 }tokenTYPE;
 #endif
