@@ -30,7 +30,7 @@ $(FILE): $(FILE).c
 run: $(FILE)
 	./$(FILE)
 
-# Cleaning terminal and removing executable after compiling the code
+# Cleaning terminal and removing executable of compiled code
 clean:	
 	rm -f $(FILE)
 	@clear
