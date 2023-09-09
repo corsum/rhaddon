@@ -19,8 +19,8 @@
 // Main File combines all modules as working code needed to be compiled.
 
 #include <string.h>
-#include "lexer.h"
-#include "parser.h"
+#include "../include/lexer.h"
+#include "../include/parser.h"
 #define MAX 256
 
 int main(void){
