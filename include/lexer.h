@@ -16,8 +16,6 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// Lexical Analyzer takes file path and opens it, then its content is tokenized. 
-
 #ifndef LEXER_H
 #define LEXER_H
 #include <stdio.h>
@@ -26,12 +24,14 @@
 #include "token_ext.h"
 #define MAX 256
 
+
 /**
- * Function `read`
- * The `read` function takes file location ,opens it and then its content is lexically analyzed.
- * 
- * @param path. Path to file needed to be open ,read and tokenized.
- * @return tokenized content. Tokenized file content.
+* Function read
+* Loads and open source file
+*
+* @param filename
+* @return tokenized file content ready to be parsered
+*
 */
 
 char *read(char *path){
