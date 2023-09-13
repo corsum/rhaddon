@@ -56,6 +56,7 @@ void checkToken(char *tokenCHECK){
     if(strcmp(tokenCHECK, KEY[i]) == 0){
      token.tokenSort = TOKEN_KEY;
    }}
+
   char *tokenstr;
    switch (token.tokenSort){
       case 0:
