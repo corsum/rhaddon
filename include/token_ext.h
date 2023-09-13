@@ -34,16 +34,6 @@ typedef struct tokenCONST{
 
 tokenCONST token;
 
-/**
- * Function `checkToken`
- * The `checkToken` function takes input token and returns its type.
- * 
- * @param token. Token
- * @return token type. Token type.
-*/
-
-// Check for variable tokens
-
 void checkToken(char *tokenCHECK){
   char *VAR[9] = {"int","bool","const","string","float","void","enum","struct","double"};
   char *OP[12] = {"=", "!", "*","/","+","-", "%", ">","<","@", "&", "|"};  
@@ -52,36 +42,36 @@ void checkToken(char *tokenCHECK){
  
   for(int i = 0; i < 9; i++){
     if(strcmp(tokenCHECK, VAR[i]) == 0){
-     token.tokenSort = TOK_VAR; 
+     token.tokenSort = TOKEN_VAR; 
    }}
   for(int i = 0; i < 12; i++){
     if(strcmp(tokenCHECK, OP[i]) == 0){
-     token.tokenSort = TOK_OPER;
+     token.tokenSort = TOKEN_OPER;
    }}
   for(int i = 0; i < 12; i++){
     if(strcmp(tokenCHECK, SEP[i]) == 0){
-     token.tokenSort = TOK_SEPAR;
+     token.tokenSort = TOKEN_SEPAR;
    }}
   for(int i = 0; i < 12; i++){
     if(strcmp(tokenCHECK, KEY[i]) == 0){
-     token.tokenSort = TOK_KEY;
+     token.tokenSort = TOKEN_KEY;
    }}
   char *tokenstr;
    switch (token.tokenSort){
       case 0:
-        tokenstr = "TOK_VAR";
+        tokenstr = "VARIABLE";
         break;
       case 1:
-        tokenstr = "TOK_OPER";
+        tokenstr = "OPERATOR";
         break;
       case 2:
-        tokenstr = "TOK_SEPAR";
+        tokenstr = "SEPARATOR";
         break;
       case 3:
-        tokenstr = "TOK_KEY";
+        tokenstr = "KEYWORD";
         break;
       case 4:
-        tokenstr = "TOK_NONE";
+        tokenstr = "NONE";
         break;  
    }
   printf("%d\n", token.tokenSort);

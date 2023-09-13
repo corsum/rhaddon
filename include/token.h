@@ -25,13 +25,13 @@
 #include "token_ext.h"
 
 typedef enum tokenSORT{
-   TOK_VAR,    
-   TOK_OPER,   
-   TOK_SEPAR, 
-   TOK_KEY,    
-   TOK_NUM,    
-   TOK_ALPHA, 
-   TOK_LIT  
+   TOKEN_VAR,    
+   TOKEN_OPER,   
+   TOKEN_SEPAR, 
+   TOKEN_KEY,    
+   TOKEN_NUM,    
+   TOKEN_ALPHA, 
+   TOKEN_LIT  
 }tokenSORT;
 
 typedef enum tokenTYPE{
