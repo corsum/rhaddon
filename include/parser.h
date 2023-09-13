@@ -25,15 +25,6 @@
 #include <string.h>
 #include "lexer.h"
 
-/**
- * Function `parser`
- * The `parser` function is main function in file parser. 
- * 
- * @param
- * @return
-*/
-
-
 int parser(void){
     return 0;
 }
