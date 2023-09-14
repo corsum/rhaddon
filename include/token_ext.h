@@ -27,12 +27,12 @@
 #include "token.h"
 // This structure is used to store information about a token features, such as its type, sort, and 
 
-typedef struct tokenCONST{
+typedef struct tokenConst{
   tokenTYPE tokenType;
   tokenSORT tokenSort;
-}tokenCONST;
+}tokenConst;
 
-tokenCONST token;
+tokenConst token;
 
 void checkToken(char *tokenCHECK){
   char *VAR[9] = {"int","bool","const","string","float","void","enum","struct","double"};

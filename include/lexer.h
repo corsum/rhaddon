@@ -24,16 +24,6 @@
 #include "token_ext.h"
 #define MAX 256
 
-
-/**
-* Function read
-* Loads and open source file
-*
-* @param filename
-* @return tokenized file content ready to be parsered
-*
-*/
-
 char *read(char *path){
    char buffer[MAX];
    FILE * fP = fopen(path, "r");
@@ -54,8 +44,7 @@ char *read(char *path){
 int lexer(char *path){
    char *content = read(path);
    printf("%s", content);
-   char token[MAX];
-   scanf("%s", token);
+   char *token = "var";
    checkToken(token);
    return 0;
 }

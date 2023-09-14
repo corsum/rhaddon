@@ -21,12 +21,9 @@
 #include <string.h>
 #include "../include/lexer.h"
 #include "../include/parser.h"
-#define MAX 256
 
 int main(void){
-    char filename[MAX];
-    scanf("%s\n", filename);
-
+    char *filename = "main.rh";
     lexer(filename);
     parser();
     return 0;
