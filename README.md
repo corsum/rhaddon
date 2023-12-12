@@ -17,10 +17,10 @@ See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTAL
 ## Basic syntax
 **main.rh**
 ```
->>> using <main.rhm>
->>> namespace HelloWorld;
->>> void main(void){
+>>> #include <main.rhm>
+>>> int main(void){
 >>>   scons -- "Hello World!";
+>>>   return 0;
 }
 ```
 ### Compile existing code
