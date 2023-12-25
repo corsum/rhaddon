@@ -26,11 +26,11 @@ See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTAL
 ```
 ### Compile existing code
 ```c
-$ rhad -cm main main.rh
+$ rhad --cm main main.rh
 ```
 ### Run compiled code
 ```c
-$ rhad -r main
+$ rhad --r main
 ```
 
 ## Contributors
