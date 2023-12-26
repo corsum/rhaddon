@@ -29,23 +29,6 @@
 #define SEPARATOR (3)
 #define LITERAL   (4)
 
-/*
-\033[0;31m Red
-\033[0;32m Green
-\033[1;32m Yellow
-\033[0;34m Blue
-\033[0m    Default
-*/
-
-STR tokenizz(STR src, const STR delim){
-   return 0;
-}
-
-typedef struct Node{
-  int data;
-  struct node *next;
-}Node;
-
 STR openFile(STR src){
   FILE *file = fopen(src,"r");
 }
@@ -56,8 +39,7 @@ typedef struct Lexer{
 } Lexer;
 
 int main(){
-  STR token[256];
-  Lexer lexer = {"dsa",token};
+  Lexer lexer;
   openFile("main.rh");
   return 0;
 }

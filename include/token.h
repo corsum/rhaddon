@@ -83,14 +83,12 @@ typedef struct returnChar{
 }returnChar;
 
 char *doubleChars(char *token){
- Token TOKEN = {0,0,0,0};
  returnChar dc = {1,2};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
      switch(token[1]){
       case '+':
-        TOKEN.tokenKind = 8; 
-        TOKEN.tokenType = 2;
+        printf("plus");
         break;
       case '=':
         printf("plusek");
@@ -150,9 +148,11 @@ char *doubleChars(char *token){
 }}
 
 char *checkChar(char token){
-  switch(token){
+   Token TOKEN = {0,0,0,0};
+   switch(token){
      case '+':
-      printf("iid\n");
+      TOKEN.tokenType = 2; 
+      TOKEN.tokenKind = 8;
      case '-':
       printf("minus\n");
   }

@@ -41,15 +41,4 @@ int checkError(throwError error){
   }
 }
 
-//printf("\033[1;31mError.%s.1.2:\033[0m\n", src);
-/*
-
-int main(){
-    throwERROR error = {"main.rh",0,2,"dasdas"};
-    checkError(error);
-    return 0;
-}
-
-*/
-
 #endif // error.h
