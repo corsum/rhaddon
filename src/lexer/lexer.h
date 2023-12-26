@@ -56,24 +56,24 @@
 #define STRUCT	    (28)
 #define CONST 	    (29)
 
+// KEYWORDS
+#define BREAK	    (30)
+#define	CASE	    (31)
+#define	CONTINUE    (32)
+#define	DEFAULT	    (33)
+#define	ELSE	    (34)
+#define	FOR	    (35)
+#define	IF	    (36)
+#define RETURN      (37)
+#define	SWITCH	    (38)
+#define	WHILE	    (39)
+
 // ASCII ESCAPE
 #define TAB	    0x09
 #define SPACE       0x20
 #define NEWLINE     0x0A  
 #define VTAB        0x0B
 #define COMMENT     0x00 // under construction || smth 
-
-// KEYWORDS
-#define BREAK	    ( 0)
-#define	CASE	    ( 1)
-#define	CONTINUE    ( 2)
-#define	DEFAULT	    ( 3)
-#define	ELSE	    ( 4)
-#define	FOR	    ( 5)
-#define	IF	    ( 6)
-#define RETURN      ( 7)
-#define	SWITCH	    ( 8)
-#define	WHILE	    ( 9)
 
 void tokenize(const char *str, const char *delim, char *token[sizeof(str)]){
     for (int i = 0; str[i] != '\0'; i++) {
