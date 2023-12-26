@@ -4,7 +4,12 @@
 </div>
 
 ## Rhaddon - Logo Guidelines
-**Rhaddon** logo contains of M-like shaped symbol and arrow on top of it pointing upwards all in white color.
+**Rhaddon** logo 
 
-- The logo shouldn't be stretched, rotated and/or recolored.
-- The logo MUST be shown ONLY in the context of the project associated with it.
+Use cases:
+  - The logo shouldn't be stretched, rotated and/or recolored.
+  - The logo MUST be shown ONLY in the context of the project associated with it.
+
+Logo variants:
+  - Monochromatic(Logo)
+  - Minimalistic(Logo)
