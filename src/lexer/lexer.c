@@ -1,5 +1,5 @@
 /*
-    Rhaddon - Low level procedural programming language.
+    Rhaddon - High level procedural programming language.
     Copyright (C) 2023  Kacper Popek
 
     This program is free software: you can redistribute it and/or modify
@@ -16,36 +16,48 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-#ifndef LEXER_H
-#define LEXER_H
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include "token_ext.h"
-#define MAX 256
+#include <stdint.h>
+#include <alias.h>
+#include <token.h>
+#include <error.h>
+#include "lexer.h"
+#define VAR 	  (0)
+#define KEYWORD   (1)
+#define OPERATOR  (2)
+#define SEPARATOR (3)
+#define LITERAL   (4)
 
-char *read(char *path){
-   char buffer[MAX];
-   FILE * fP = fopen(path, "r");
-   if(!fP){
-      perror("Error while opening a file or directory");
-      return NULL;
-   }
-   else {
-   while(fgets(buffer, MAX, fP) !=NULL){
-   printf("%s\n", buffer);
-    }
-   fclose(fP);
-}
-   char *tokenizedString = strtok(buffer, " ");
-   return tokenizedString;
-}
+/*
+\033[0;31m Red
+\033[0;32m Green
+\033[1;32m Yellow
+\033[0;34m Blue
+\033[0m    Default
+*/
 
-int lexer(char *path){
-   char *content = read(path);
-   printf("%s", content);
-   char *token = "var";
-   checkToken(token);
+STR tokenizz(STR src, const STR delim){
    return 0;
 }
-#endif
+
+typedef struct Node{
+  int data;
+  struct node *next;
+}Node;
+
+STR openFile(STR src){
+  FILE *file = fopen(src,"r");
+}
+
+typedef struct Lexer{
+  STR input;
+  STR *token;
+} Lexer;
+
+int main(){
+  STR token[256];
+  Lexer lexer = {"dsa",token};
+  openFile("main.rh");
+  return 0;
+}

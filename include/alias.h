@@ -1,5 +1,5 @@
 /*
-    Rhaddon - Low level procedural programming language.
+    Rhaddon - High level procedural programming language.
     Copyright (C) 2023  Kacper Popek
 
     This program is free software: you can redistribute it and/or modify
@@ -16,16 +16,10 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// Parser takes tokenized
-
-#ifndef PARSER_H
-#define PARSER_H
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "lexer.h"
-
-int parser(void){
-    return 0;
-}
-#endif
+typedef uint64_t UI64; 		//   -
+typedef uint32_t UI32; 		//   -
+typedef uint16_t UI16; 		//   -
+typedef uint8_t  UI8; 	 	//   -
+typedef unsigned char UCH;	// 0 - 255
+typedef unsigned short int USI; // 0 - 65,535
+typedef char* STR;              //   -

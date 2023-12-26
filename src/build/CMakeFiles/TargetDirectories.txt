@@ -1,2 +1,0 @@
-/home/kacperaan/Desktop/rhaddon/src/build/CMakeFiles/edit_cache.dir
-/home/kacperaan/Desktop/rhaddon/src/build/CMakeFiles/rebuild_cache.dir

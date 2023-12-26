@@ -1,5 +1,5 @@
 /*
-    Rhaddon - Low level procedural programming language.
+    Rhaddon - High level procedural programming language.
     Copyright (C) 2023  Kacper Popek
 
     This program is free software: you can redistribute it and/or modify
@@ -16,99 +16,146 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-// Token file contains of features and types for lexer tokens.
+
+/*
+
+void checkToken(char *tokenCHECK){
+  char *VAR[9] = {"int","bool","const","string","float","void","enum","struct","double"};
+  char *KEY[12] = {"using","switch","case","namespace","return","if","else","break","and","while","for","continue"};  
+ 
+  for(int i = 0; i < 9; i++){
+    if(strcmp(tokenCHECK, VAR[i]) == 0){
+     token.tokenSort = TOKEN_VAR; 
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, OP[i]) == 0){
+     token.tokenSort = TOKEN_OPER;
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, SEP[i]) == 0){
+     token.tokenSort = TOKEN_SEPAR;
+   }}
+  for(int i = 0; i < 12; i++){
+    if(strcmp(tokenCHECK, KEY[i]) == 0){
+     token.tokenSort = TOKEN_KEY;
+   }}
+
+  char *tokenstr;
+   switch (token.tokenSort){
+      case 0:
+        tokenstr = "VARIABLE";
+        break;
+      case 1:
+        tokenstr = "OPERATOR";
+        break;
+      case 2:
+        tokenstr = "SEPARATOR";
+        break;
+      case 3:
+        tokenstr = "KEYWORD";
+        break;
+      case 4:
+        tokenstr = "NONE";
+        break;  
+   }
+  printf("%d\n", token.tokenSort);
+  printf("%s\n", tokenstr);
+}
+
+*/
 
 #ifndef TOKEN_H
 #define TOKEN_H
-#include <stdio.h>
-#include <stdlib.h>
-#include "token_ext.h"
+#include <string.h>
+#include "alias.h"
 
-typedef enum tokenSORT{
-   TOKEN_VAR,    
-   TOKEN_OPER,   
-   TOKEN_SEPAR, 
-   TOKEN_KEY,    
-   TOKEN_NUM,    
-   TOKEN_ALPHA, 
-   TOKEN_LIT  
-}tokenSORT;
+typedef struct Token{
+  USI tokenKind;
+  USI tokenType;
+  UI64 tokenRow;
+  UI64 tokenCol;
+} Token;
 
-typedef enum tokenTYPE{
-  
-// VARIABLE
-  INT,
-  BOOL,
-  CONST,
-  CHAR,
-  FLOAT,
-  DOUBLE,
-  UNION,
-  STRUCT,
-  ENUM,
-  FUNC,
-  TYPEDEF,
 
-// OPERATORS
-  EQ,        // =
-  DEQ,       // ==
-  EXC,       // !
-  EXCEQ,     // !=
-  STAR,      // *
-  STAREQ,    // *=
-  SLASH,     // /
-  SLASHEQ,   // /=
-  PLUS,      // +
-  PLUSEQ,    // +=
-  MINUS,     // -
-  MINUSEQ,   // -=
-  PERCENT,   // %
-  PERCENTEQ, // %=
-  HIGH,      // >
-  HIGHEQ,    // >=
-  LESS,      // <
-  LESSEQ,    // <=
-  AMPER,     // &
-  AMPEREQ,   // &=
-  AT,        // @
-  ATEQ,      // @=
-  COLON,     // :
+typedef struct returnChar{
+   int fChar;
+   int sChar;
+}returnChar;
 
-// SEPARATORS
-  OPPAR,     // (
-  CLPAR,     // )
-  OPBRAC,    // {
-  CLBRAC,    // }
-  OPSQRBRAC, // [
-  CLSQRBRAC, // ]
-  QUOTE,     // "
-  APOS,      // '
-  DOT,       // .
-  COMMA,     // ,
-  ENDLN,     // ;
-  
-// KEYWORDS
-  USING,  
-  SWITCH,    
-  CASE,      
-  RETURN,
-  NAMESPACE,
-  IF,
-  ELSE,
-  ELIF,
-  OR,
-  NOT,
-  AND,
-  WHILE,
-  FOR,
-  BREAK,
-  CONTINUE,
+char *doubleChars(char *token){
+ Token TOKEN = {0,0,0,0};
+ returnChar dc = {1,2};
+ if(strlen(token) == 2){
+  if(token[0] == '+' ){
+     switch(token[1]){
+      case '+':
+        TOKEN.tokenKind = 8; 
+        TOKEN.tokenType = 2;
+        break;
+      case '=':
+        printf("plusek");
+        break;
+   }}
+  if(token[0] == '-' ){
+     switch(token[1]){
+      case '-':
+        printf("minus");
+        break;
+      case '=':
+        printf("minusek");
+        break;
+   }}
+   if(token[0] == '<' ){
+     switch(token[1]){
+      case '<':
+        printf("minus");
+        break;
+      case '=':
+        printf("minusek");
+        break;
+   }}
+   if(token[0] == '>' ){
+     switch(token[1]){
+      case '>':
+        printf("minus");
+        break;
+      case '=':
+        printf("minusek");
+        break;
+   }}
+   if(token[0] == '&' ){
+     switch(token[1]){
+      case '&':
+        printf("minus");
+        break;
+      case '=':
+        printf("minusek");
+        break;
+   }}
+   if(token[0] == '|' ){
+     switch(token[1]){
+      case '|':
+        printf("minus");
+        break;
+      case '=':
+        printf("minusek");
+        break;
+   }}
+   if(token[0] == '!' ){
+     switch(token[1]){
+      case '=':
+        printf("minus");
+        break;
+   }}
+}}
 
-// LITERALS
-  TRUE,
-  FALSE,
-  NONE,
-  FP,
-  STR 
-}tokenTYPE;
+char *checkChar(char token){
+  switch(token){
+     case '+':
+      printf("iid\n");
+     case '-':
+      printf("minus\n");
+  }
+}
+
 #endif
