@@ -64,15 +64,16 @@
 #define COMMENT     0x00 // under construction || smth 
 
 // KEYWORDS
-/*
-#define             (0)
-#define		    (1)
-#define		    (2)
-#define		    (3)
-#define		    (4)
-#define		    (5)
-#define		    (6)
-*/
+#define BREAK	    ( 0)
+#define	CASE	    ( 1)
+#define	CONTINUE    ( 2)
+#define	DEFAULT	    ( 3)
+#define	ELSE	    ( 4)
+#define	FOR	    ( 5)
+#define	IF	    ( 6)
+#define RETURN      ( 7)
+#define	SWITCH	    ( 8)
+#define	WHILE	    ( 9)
 
 void tokenize(const char *str, const char *delim, char *token[sizeof(str)]){
     for (int i = 0; str[i] != '\0'; i++) {
