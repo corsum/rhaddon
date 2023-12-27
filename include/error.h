@@ -25,7 +25,7 @@ typedef struct throwError{
 int checkError(throwError error){
   switch(error.type){
    case 0:
-     printf("\033[1;31mError in file:%s.%d.%d:\033[0m\n", error.src, error.cols,error.lines);
+     printf("%sError in file:%s.%d.%d:%s\n", RED,error.src, error.cols,error.lines,DEF);
      return E_SEGF;
    case 1:
      return E_SYNT;
