@@ -1,7 +1,7 @@
 CC=gcc
-ASMC=nasm
+AC=nasm
 TARGET=main
-SOURCE=src/$(TARGET).c
+SRC=src/$(TARGET).c
 LEXER=src/lexer/lexer.c
 INCLUDE=include
 
