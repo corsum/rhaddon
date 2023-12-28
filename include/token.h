@@ -16,54 +16,6 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-
-/*
-
-void checkToken(char *tokenCHECK){
-  char *VAR[9] = {"int","bool","const","string","float","void","enum","struct","double"};
-  char *KEY[12] = {"using","switch","case","namespace","return","if","else","break","and","while","for","continue"};  
- 
-  for(int i = 0; i < 9; i++){
-    if(strcmp(tokenCHECK, VAR[i]) == 0){
-     token.tokenSort = TOKEN_VAR; 
-   }}
-  for(int i = 0; i < 12; i++){
-    if(strcmp(tokenCHECK, OP[i]) == 0){
-     token.tokenSort = TOKEN_OPER;
-   }}
-  for(int i = 0; i < 12; i++){
-    if(strcmp(tokenCHECK, SEP[i]) == 0){
-     token.tokenSort = TOKEN_SEPAR;
-   }}
-  for(int i = 0; i < 12; i++){
-    if(strcmp(tokenCHECK, KEY[i]) == 0){
-     token.tokenSort = TOKEN_KEY;
-   }}
-
-  char *tokenstr;
-   switch (token.tokenSort){
-      case 0:
-        tokenstr = "VARIABLE";
-        break;
-      case 1:
-        tokenstr = "OPERATOR";
-        break;
-      case 2:
-        tokenstr = "SEPARATOR";
-        break;
-      case 3:
-        tokenstr = "KEYWORD";
-        break;
-      case 4:
-        tokenstr = "NONE";
-        break;  
-   }
-  printf("%d\n", token.tokenSort);
-  printf("%s\n", tokenstr);
-}
-
-*/
-
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string.h>
