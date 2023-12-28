@@ -8,8 +8,8 @@
 
 Use cases:
   - The logo shouldn't be stretched, rotated and/or recolored.
-  - The logo MUST be shown ONLY in the context of the project associated with it.
+  - The logo MUST be shown ONLY in the context of the project.
 
 Logo variants:
-  - Monochromatic(Logo)
-  - Minimalistic(Logo)
+  - Monochromatic(Black and White colors)
+  - Minimalistic(Only one color)
