@@ -16,10 +16,23 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-typedef uint64_t UI64; 		//   -
-typedef uint32_t UI32; 		//   -
-typedef uint16_t UI16; 		//   -
-typedef uint8_t  UI8; 	 	//   -
-typedef unsigned char UCH;	// 0 - 255
-typedef unsigned short int USI; // 0 - 65,535
-typedef char* STR;              //   -
+// Unsigned
+typedef uint64_t UI64; 		// 0 - (1,844674*10^19) | unsigned long long 
+typedef uint32_t UI32; 		// 0 - (4,294967*10^9)  | unsigned int
+typedef uint16_t UI16; 		// 0 - (6,5535*10^4)    | unsigned short
+typedef uint8_t  UI8; 	 	// 0 - (2,55*10^2)      | unsigned char
+
+// Signed
+typedef int64_t I64; 		// -128 - (,*10^) | signed long long
+typedef int32_t I32; 		// 0 - (,*10^) | signed int
+typedef int16_t I16; 		// 0 - (,*10^) | signed short
+typedef int8_t  I8; 	 	// 0 - (,*10^) | signed char
+
+// String
+typedef char* STR;              // 32-bit OS: 0 - (2^32-1) 64-bit OS: 0 - (2^64-1)
+
+// Experimental
+typedef unsigned char UCH;	// 0 - () |
+typedef unsigned short int USI; // 0 - () |
+typedef signed char SCH;	// 0 - |
+typedef signed short int SSI;   // 0 - |

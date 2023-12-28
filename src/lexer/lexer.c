@@ -28,6 +28,7 @@
 #define OPERATOR  (2)
 #define SEPARATOR (3)
 #define LITERAL   (4)
+#define IDENTFIER (5)
 
 STR openFile(STR src){
   FILE *file = fopen(src,"r");
