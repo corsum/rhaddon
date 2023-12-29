@@ -41,6 +41,6 @@ typedef struct Lexer{
 
 int main(){
   Lexer lexer;
-  openFile("main.rh");
+  doubleChars("++");
   return 0;
 }

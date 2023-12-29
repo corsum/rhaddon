@@ -97,16 +97,4 @@ char *checkChar(char token){
 }
 
 
-void tokenize(const char *str, const char *delim, char *token[sizeof(str)]){
-    for (int i = 0; str[i] != '\0'; i++) {
-        int delimc = 0;
-        for (int j = 0; delim[j] != '\0'; j++) {
-            if (str[i] == delim[j]) {
-                delimc = 1;
-                break;
-    }
-   }
-  }
- }
-
 #endif
