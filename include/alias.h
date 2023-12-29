@@ -23,10 +23,10 @@ typedef uint16_t UI16; 		// 0 - (6,5535*10^4)    | unsigned short
 typedef uint8_t  UI8; 	 	// 0 - (2,55*10^2)      | unsigned char
 
 // Signed
-typedef int64_t I64; 		// -128 - (,*10^) | signed long long
-typedef int32_t I32; 		// 0 - (,*10^) | signed int
-typedef int16_t I16; 		// 0 - (,*10^) | signed short
-typedef int8_t  I8; 	 	// 0 - (,*10^) | signed char
+typedef int64_t I64; 		// -128 - (,*10^)       | signed long long
+typedef int32_t I32; 		// 0 - (,*10^) 		| signed int
+typedef int16_t I16; 		// -32.768 - 32.767 	| signed short
+typedef int8_t  I8; 	 	// -128 - 127     	| signed char
 
 // String
 typedef char* STR;              // 32-bit OS: 0 - (2^32-1) 64-bit OS: 0 - (2^64-1)
