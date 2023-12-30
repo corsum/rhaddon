@@ -76,6 +76,7 @@
 #define VTAB        0x0B
 #define COMMENT     0x00 // under construction || smth 
 
+
 typedef struct Token{
   USI tokenKind;
   USI tokenType;
@@ -88,6 +89,5 @@ typedef struct returnChar{
    int fChar;
    int sChar;
 }returnChar;
-
 
 #endif
