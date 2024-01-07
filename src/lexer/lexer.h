@@ -19,8 +19,9 @@
 #ifndef LEXER_H
 #define LEXER_H
 #include <string.h>
+#include <alias.h>
 
-char *doubleChars(char *token){
+STR doubleChars(char *token){
  returnChar dc = {1,2};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
