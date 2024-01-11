@@ -22,7 +22,6 @@
 #include <alias.h>
 
 STR doubleChars(char *token){
- returnChar dc = {1,2};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
      switch(token[1]){

@@ -30,17 +30,7 @@
 #define LITERAL   (4)
 #define IDENTFIER (5)
 
-STR openFile(STR src){
-  FILE *file = fopen(src,"r");
-}
-
-typedef struct Lexer{
-  STR input;
-  STR *token;
-} Lexer;
-
 int main(){
-  Lexer lexer;
   doubleChars("++");
   return 0;
 }

@@ -84,10 +84,4 @@ typedef struct Token{
   UI64 tokenCol;
 } Token;
 
-
-typedef struct returnChar{
-   int fChar;
-   int sChar;
-}returnChar;
-
 #endif
