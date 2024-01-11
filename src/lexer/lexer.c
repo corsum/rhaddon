@@ -23,14 +23,21 @@
 #include <token.h>
 #include <error.h>
 #include "lexer.h"
-#define VAR 	  (0)
-#define KEYWORD   (1)
-#define OPERATOR  (2)
-#define SEPARATOR (3)
-#define LITERAL   (4)
-#define IDENTFIER (5)
+
+int checkChar(char token){
+   Token TOKEN;
+   switch(token){
+     case '+':
+       return PLUS;
+	 case '-':
+       return MINUS;
+  }
+}
+
+typedef enum tokenType{
+  T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
+}tokenType;
 
 int main(){
-  doubleChars("++");
   return 0;
 }

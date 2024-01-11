@@ -85,16 +85,4 @@ STR doubleChars(char *token){
    }}
 }}
 
-char *checkChar(char token){
-   Token TOKEN = {0,0,0,0};
-   switch(token){
-     case '+':
-      TOKEN.tokenType = 2; 
-      TOKEN.tokenKind = 8;
-     case '-':
-      printf("minus\n");
-  }
-}
-
-
 #endif
