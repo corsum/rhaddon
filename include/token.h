@@ -63,14 +63,14 @@
 #define	CONTINUE    (32)
 #define	DEFAULT	    (33)
 #define	ELSE	    (34)
-#define	FOR	    (35)
-#define	IF	    (36)
+#define	FOR	        (35)
+#define	IF	        (36)
 #define RETURN      (37)
 #define	SWITCH	    (38)
 #define	WHILE	    (39)
 
 // ASCII ESCAPE
-#define TAB	    0x09
+#define TAB	        0x09
 #define SPACE       0x20
 #define NEWLINE     0x0A  
 #define VTAB        0x0B
