@@ -16,6 +16,9 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef _ERROR_H
 #define _ERROR_H
 #include <stdio.h>
@@ -27,23 +30,38 @@
 #define E_SEMA       (4) // Semantic
 #define E_UNDF       (5) // Undefined
 
+// ERROR COLOR CODES
+#define NONE         "\033[0m"
 #define RED          "\033[0;31m"   
 #define GREEN        "\033[0;32m"
-#define YELLOW       "\033[1;32m"
 #define BLUE 	     "\033[0;34m"
-#define DEF          "\033[0m"
+#define CYAN  	     "\033[0;36m"
+#define MAGENTA	     "\033[0;35m"
+#define YELLOW       "\033[1;32m"
+#define BLACK	     "\033[0;30m"
+#define WHITE	     "\033[0;37m"
 
-typedef struct throwError{
-  STR src;
+#define RED_L        "\033[0;31m"   
+#define GREEN_L      "\033[0;32m"
+#define BLUE_L 	     "\033[0;34m"
+#define CYAN_L       "\033[0;36m"
+#define MAGENTA_L    "\033[0;35m"
+#define YELLOW_L     "\033[1;32m"
+#define BLACK_L	     "\033[0;30m"
+#define WHITE_L	     "\033[0;37m"
+
+typedef struct Error{
+  char *src;
   int type;
   int cols;
   int lines;
-}throwError;
+}Error;
 
-int checkError(throwError error){
+int throwError(Error error){
+  printf("%sError in file:%s.%d.%d:%s\n", RED,error.src, error.cols,error.lines,NONE);
   switch(error.type){
    case 0:
-     printf("%sError in file:%s.%d.%d:%s\n", RED,error.src, error.cols,error.lines,DEF);
+     printf("SEGFAUL");
      return E_SEGF;
    case 1:
      return E_SYNT;
@@ -58,5 +76,7 @@ int checkError(throwError error){
 
   }
 }
-
-#endif // error.h
+#endif
+#ifdef __cplusplus
+}
+#endif

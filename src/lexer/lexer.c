@@ -15,15 +15,21 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 #include <stdio.h>
 #include <string.h>
 #include <alias.h>
 #include <token.h>
 #include <error.h>
+Error error = {0,0,3,4};
 
 int main(){
-  int a = checkChar('+');
-  printf("%d", a);
+  throwError(error);
   return 0;
 }
+
+#ifdef __cplusplus
+}
+#endif

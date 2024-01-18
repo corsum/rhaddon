@@ -17,6 +17,7 @@
 */
 
 // Unsigned
+#include <stdint.h>
 typedef uint64_t UI64; 		// 0 - (1,844674*10^19) | unsigned long long 
 typedef uint32_t UI32; 		// 0 - (4,294967*10^9)  | unsigned int
 typedef uint16_t UI16; 		// 0 - (6,5535*10^4)    | unsigned short
