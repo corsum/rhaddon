@@ -7,6 +7,7 @@ extern "C"
 #include "error.h"
 #include "optimizer.h"
 #include "token.h"
+
 #endif
 #ifdef __cplusplus
 }
