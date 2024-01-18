@@ -5,7 +5,7 @@ authors:
   given-names: "Kacper"
   orcid: "https://orcid.org/0009-0006-1657-1512"
 title: "rhaddon"
-version: 23.0.1
+version: 0.1 
 doi: 10.5281/zenodo.8216963
 date-released: 2023-08-06
 url: "https://github.com/corsum/rhaddon"
