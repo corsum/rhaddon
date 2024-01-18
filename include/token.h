@@ -75,6 +75,7 @@
 #define NEWLINE     0x0A  
 #define VTAB        0x0B
 #define COMMENT     0x00 
+// under construction || smth const char *operators = "&:.=!-%|+;/*^@#";
 
 typedef enum tokenType{
   T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
@@ -90,10 +91,14 @@ typedef struct Token{
 int checkChar(const char token){
    Token TOKEN;
    switch(token){
-     case '+':
-       return PLUS;
-	 case '-':
-       return MINUS;
+     case '&':
+       return AMPER;
+     case ':':
+       return COMMA;
+     case '.':
+       return DOT;
+     case '=':
+       return EQUAL;
   }
 }
 
