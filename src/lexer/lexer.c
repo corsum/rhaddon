@@ -18,26 +18,12 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdint.h>
 #include <alias.h>
 #include <token.h>
 #include <error.h>
-#include "lexer.h"
-
-int checkChar(char token){
-   Token TOKEN;
-   switch(token){
-     case '+':
-       return PLUS;
-	 case '-':
-       return MINUS;
-  }
-}
-
-typedef enum tokenType{
-  T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
-}tokenType;
 
 int main(){
+  int a = checkChar('+');
+  printf("%d", a);
   return 0;
 }
