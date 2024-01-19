@@ -23,10 +23,24 @@ extern "C" {
 #include <alias.h>
 #include <token.h>
 #include <error.h>
-Error error = {0,0,3,4};
+Error error;
 
-int main(){
-  throwError(error);
+char *splitString(char *str, const char delim){
+  char *token[strlen(str)];
+  return 0;
+}
+
+char *loadFile(char *src){
+  FILE *file = fopen(src,"w");
+  if(file == NULL){
+   printf("%sLexer Error: Cannot find file '%s'",RED,src); 
+   return 0;
+  }
+  fclose(file);
+}
+
+int main(int argc, char *argv[]){
+  loadFile(argv[1]); 
   return 0;
 }
 

@@ -51,7 +51,7 @@ extern "C" {
 #define WHITE_L	     "\033[0;37m"
 
 typedef struct Error{
-  char *src;
+  STR src;
   int type;
   int cols;
   int lines;
