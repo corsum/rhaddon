@@ -16,6 +16,9 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+#ifdef __cplusplus
+extern "C"{
+#endif
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string.h>
@@ -167,5 +170,7 @@ STR doubleChars(const char *token){
 }}
 
 
-
+#ifdef __cplusplus
+}
+#endif
 #endif
