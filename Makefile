@@ -2,7 +2,7 @@ CC=gcc
 AC=nasm
 TARGET=main
 SRC=src/$(TARGET).c
-LEXER=src/lexer/lexer.c
+LEXER=src/lexer.c
 INCLUDE=include
 
 all: build

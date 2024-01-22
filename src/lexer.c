@@ -33,7 +33,7 @@ char *splitString(char *str, const char delim){
 char *loadFile(char *src){
   FILE *file = fopen(src,"w");
   if(file == NULL){
-   printf("%sLexer Error: Cannot find file '%s'",RED,src); 
+   printf("%sLexer Error: Cannot find file '%s'%s",RED,src,NONE); 
    return 0;
   }
   fclose(file);
