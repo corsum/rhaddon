@@ -29,6 +29,7 @@ extern "C" {
 #define E_RUNT       (3) // Runtime
 #define E_SEMA       (4) // Semantic
 #define E_UNDF       (5) // Undefined
+#define E_FNF        (6) // File not found
 
 // ERROR COLOR CODES
 #define NONE         "\033[0m"
@@ -58,10 +59,10 @@ typedef struct Error{
 }Error;
 
 int throwError(Error error){
-  printf("%sError in file:%s.%d.%d:%s\n", RED,error.src, error.cols,error.lines,NONE);
+  printf("%sError:%s.%d.%d:%s", RED,error.src, error.cols,error.lines,NONE);
   switch(error.type){
    case 0:
-     printf("SEGFAUL");
+     printf("%sSegmentation fault: Core dumped\n", CYAN);
      return E_SEGF;
    case 1:
      return E_SYNT;
@@ -73,7 +74,9 @@ int throwError(Error error){
      return E_SEMA;
    case 5:
      return E_UNDF;
-
+   case 6:
+     printf("%sFile not found:%s%s\n", CYAN, error.src, NONE);
+     return E_FNF;
   }
 }
 #endif

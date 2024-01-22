@@ -23,7 +23,6 @@ extern "C" {
 #include <alias.h>
 #include <token.h>
 #include <error.h>
-Error error;
 
 char *splitString(char *str, const char delim){
   char *token[strlen(str)];
@@ -33,7 +32,8 @@ char *splitString(char *str, const char delim){
 char *loadFile(char *src){
   FILE *file = fopen(src,"w");
   if(file == NULL){
-   printf("%sLexer Error: Cannot find file '%s'%s",RED,src,NONE); 
+   Error error = {src,6,0,0};
+   throwError(error);
    return 0;
   }
   fclose(file);
