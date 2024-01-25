@@ -102,6 +102,14 @@ int checkChar(const char token){
        return DOT;
      case '=':
        return EQUAL;
+     case '!':
+       return EXCLAMATION;
+     case '-':
+       return MINUS;
+     case '%':
+       return PERCENT;
+     case '|':
+       return PIPE;
   }
 }
 
