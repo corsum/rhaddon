@@ -23,6 +23,7 @@ extern "C" {
 #define _ERROR_H
 #include <stdio.h>
 #include "alias.h"
+#include "vga.h" 
 #define E_SEGF 	     (0) // Segmentation fault
 #define E_SYNT       (1) // Syntax
 #define E_LINK       (2) // Linker
@@ -30,26 +31,6 @@ extern "C" {
 #define E_SEMA       (4) // Semantic
 #define E_UNDF       (5) // Undefined
 #define E_FNF        (6) // File not found
-
-// ERROR COLOR CODES
-#define NONE         "\033[0m"
-#define RED          "\033[0;31m"   
-#define GREEN        "\033[0;32m"
-#define BLUE 	     "\033[0;34m"
-#define CYAN  	     "\033[0;36m"
-#define MAGENTA	     "\033[0;35m"
-#define YELLOW       "\033[1;32m"
-#define BLACK	     "\033[0;30m"
-#define WHITE	     "\033[0;37m"
-
-#define RED_L        "\033[0;31m"   
-#define GREEN_L      "\033[0;32m"
-#define BLUE_L 	     "\033[0;34m"
-#define CYAN_L       "\033[0;36m"
-#define MAGENTA_L    "\033[0;35m"
-#define YELLOW_L     "\033[1;32m"
-#define BLACK_L	     "\033[0;30m"
-#define WHITE_L	     "\033[0;37m"
 
 typedef struct Error{
   STR src;
