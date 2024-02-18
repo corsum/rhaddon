@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <rhaddon.h>
 
 int main(int argc, char *argv[]) {
   if(argc > 1 && strcmp(argv[1], "--help")){
