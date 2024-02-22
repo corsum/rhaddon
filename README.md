@@ -19,6 +19,7 @@
 ## Installation
 See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTALLATION.md</a>
 
+<!--
 ## Basic syntax
 **main.rh**
 ```
@@ -36,6 +37,7 @@ $ rhad --cm main.rh --o main
 ```c
 $ rhad --r main
 ```
+-->
 
 ## Contributors
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=corsum/rhaddon)
