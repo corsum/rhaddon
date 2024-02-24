@@ -5,7 +5,7 @@ SRC=src/$(TARGET).c
 LEXER=src/lexer.c
 INCLUDE=include
 
-CFLAGS= -I include
+CFLAGS= -I include -Wall -Wextra
 
 all: build
 
