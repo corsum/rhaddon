@@ -1,3 +1,0 @@
-/home/kacperaan/rhaddon/build/CMakeFiles/rhaddon-compiler.dir
-/home/kacperaan/rhaddon/build/CMakeFiles/edit_cache.dir
-/home/kacperaan/rhaddon/build/CMakeFiles/rebuild_cache.dir
