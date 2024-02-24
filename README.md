@@ -9,36 +9,6 @@
 ![C](https://img.shields.io/badge/Made_with-C-blue)
 </div>
 
- ## Rhaddon - Introduction
- **Rhaddon** is a C-like high-level, open-source procedural programming language
-
-<!--
-, it is mainly intended for users who value execution speed and minimalism. For better use it contains built-in garbage collector with automatic memory management to prevent segmentation fault or other similiar issues.
--->
-
-## Installation
-See <a href="https://github.com/corsum/rhaddon/blob/main/INSTALLATION.md">INSTALLATION.md</a>
-
-<!--
-## Basic syntax
-**main.rh**
-```
->>> #include <main.rhm>
->>> int main(void){
->>>   scons -- "Hello World!";
->>>   return 0;
-}
-```
-### Compile existing code
-```c
-$ rhad --cm main.rh --o main
-```
-### Run compiled code
-```c
-$ rhad --r main
-```
--->
-
 ## Contributors
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=corsum/rhaddon)
 
