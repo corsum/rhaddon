@@ -32,12 +32,30 @@ extern "C" {
 #define E_UNDF       (5) // Undefined
 #define E_FNF        (6) // File not found
 
+/*
+* @struct 	Error	
+*
+* @field src    Name of the file
+* @field type   Type of the error in int
+* @field cols   Column
+* @field lines  Lines
+*
+* @return
+*/
+
 typedef struct Error{
   STR src;
   int type;
   int cols;
   int lines;
 }Error;
+
+/* 
+* @function throwError is used to print error messages
+* 
+* @param  - struct Error
+* @return -
+*/
 
 int throwError(Error error){
   printf("%sError:%s.%d.%d:%s", RED,error.src, error.cols,error.lines,NONE);
