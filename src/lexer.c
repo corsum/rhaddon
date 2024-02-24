@@ -24,10 +24,27 @@ extern "C" {
 #include <token.h>
 #include <error.h>
 
+/*
+* @function splitString is used to split source file contents
+*
+* @param str	Source file location
+* @param delim  Separator
+*
+* @return
+*/
+
 char *splitString(char *str, const char delim){
   char *token[strlen(str)];
   return 0;
 }
+
+/*
+* @function loadFile
+*
+* @param
+*
+* @return
+*/
 
 char *loadFile(char *src){
   FILE *file = fopen(src,"w");

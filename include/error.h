@@ -16,6 +16,13 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+/*
+* Filename:error.h
+* Description:Header used mainly for the lexer
+*
+* This file contains
+*/
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -35,10 +42,10 @@ extern "C" {
 /*
 * @struct 	Error	
 *
-* @field src    Name of the file
-* @field type   Type of the error in int
-* @field cols   Column
-* @field lines  Lines
+* @field src    Name of the file where the error is located
+* @field type   Type of the error presented with int
+* @field cols   Column when the error is located
+* @field lines  Line when the error is located
 *
 * @return
 */
@@ -53,8 +60,8 @@ typedef struct Error{
 /* 
 * @function throwError is used to print error messages
 * 
-* @param  - struct Error
-* @return -
+* @param Error  da
+* @return
 */
 
 int throwError(Error error){
