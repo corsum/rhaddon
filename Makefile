@@ -5,9 +5,11 @@ SRC=src/$(TARGET).c
 LEXER=src/lexer.c
 INCLUDE=include
 
+CFLAGS= -I include
+
 all: build
 
 .PHONY: build
 build: $(LEXER)
-	$(CC) -I $(INCLUDE) $(LEXER) -o $(TARGET)
+	$(CC) $(CFLAGS) $(LEXER) -o $(TARGET)
 	./$(TARGET)
