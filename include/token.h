@@ -78,11 +78,26 @@ extern "C"{
 #define NEWLINE     0x0A  
 #define VTAB        0x0B
 #define COMMENT     0x00 
-// under construction || smth const char *operators = "&:.=!-%|+;/*^@#";
+
+/*
+*
+*
+*
+*/
 
 typedef enum tokenType{
   T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
 }tokenType;
+
+/*
+* @struct	Token
+*
+* @field unsigned int tokenKind
+* @field
+* @field unsigned int 64 tokenRow
+* @field unsigned int 64 tokenCol
+* @field
+*/
 
 typedef struct Token{
   USI tokenKind;
@@ -90,6 +105,14 @@ typedef struct Token{
   UI64 tokenRow;
   UI64 tokenCol;
 } Token;
+
+/*
+* @function
+*
+* @param const char token
+*
+* @return tokenKind 
+*/
 
 int checkChar(const char token){
    Token TOKEN;

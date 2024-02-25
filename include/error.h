@@ -46,8 +46,6 @@ extern "C" {
 * @field type   Type of the error presented with int
 * @field cols   Column when the error is located
 * @field lines  Line when the error is located
-*
-* @return
 */
 
 typedef struct Error{
@@ -60,8 +58,8 @@ typedef struct Error{
 /* 
 * @function throwError is used to print error messages
 * 
-* @param Error  da
-* @return
+* @param Error  @struct above 
+* @return	Error type
 */
 
 int throwError(Error error){
