@@ -115,7 +115,6 @@ typedef struct Token{
 */
 
 int checkChar(const char token){
-   Token TOKEN;
    switch(token){
      case '&':
        return AMPER;
