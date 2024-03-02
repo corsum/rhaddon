@@ -27,21 +27,21 @@ extern "C" {
 /*
 * @function splitString is used to split source file contents
 *
-* @param str	Source file location
+* @param src	Source file location
 * @param delim  Separator
 *
 * @return
 */
 
-char *splitString(char *str, const char delim){
-  char *token[strlen(str)];
+char *splitString(char *src, const char delim){
+  char *token[strlen(src)];
   return 0;
 }
 
 /*
 * @function loadFile
 *
-* @param
+* @param src  Source file location
 *
 * @return
 */
