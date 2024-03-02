@@ -17,3 +17,5 @@ build: $(LEXER)
 build-f: $(LEXER)
 	$(CC) $(CFLAGS) $(LEXER) -o $(TARGET)
 	./$(TARGET)
+clean:
+	rm -rf ./$(TARGET)
