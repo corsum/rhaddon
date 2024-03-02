@@ -57,7 +57,7 @@ char *loadFile(char *src){
 }
 
 int main(int argc, char *argv[]){
-  loadFile(argv[1]); 
+  STR sourceCode = loadFile(argv[1]); 
   return 0;
 }
 
