@@ -31,9 +31,3 @@ typedef int8_t  I8; 	 	// -128 - 127     	| signed char
 
 // String
 typedef char* STR;              // 32-bit OS: 0 - (2^32-1) 64-bit OS: 0 - (2^64-1)
-
-// Experimental
-typedef unsigned char UCH;	// 0 - () |
-typedef unsigned short int USI; // 0 - () |
-typedef signed char SCH;	// 0 - |
-typedef signed short int SSI;   // 0 - |
