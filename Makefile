@@ -7,9 +7,13 @@ INCLUDE=include
 
 CFLAGS= -I include -Wall -Wextra
 
-all: build
+all: build build-f
 
-.PHONY: build
+.PHONY: build build-f
+build-f: $(LEXER)
+	$(CC) -I include $(LEXER) -o $(TARGET)
+	./$(TARGET)
+
 build: $(LEXER)
 	$(CC) $(CFLAGS) $(LEXER) -o $(TARGET)
 	./$(TARGET)
