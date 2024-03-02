@@ -10,10 +10,10 @@ CFLAGS= -I include -Wall -Wextra
 all: build build-f
 
 .PHONY: build build-f
-build-f: $(LEXER)
-	$(CC) -I include $(LEXER) -o $(TARGET)
+build: $(LEXER)
+	$(CC) -I include/ $(LEXER) -o $(TARGET)
 	./$(TARGET)
 
-build: $(LEXER)
+build-f: $(LEXER)
 	$(CC) $(CFLAGS) $(LEXER) -o $(TARGET)
 	./$(TARGET)

@@ -100,7 +100,7 @@ typedef enum tokenType{
 */
 
 typedef struct Token{
-  USI tokenKind;
+  UI64 tokenKind;
   tokenType tokenType;
   UI64 tokenRow;
   UI64 tokenCol;
