@@ -49,6 +49,8 @@ char *splitString(char *str, const char delim){
 char *loadFile(char *src){
   FILE *file = fopen(src,"w");
   if(file == NULL){
+   Error error = {"File not found",1,1,1};
+   throwError(error);
    return 0;
   }
   fclose(file);
