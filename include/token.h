@@ -100,10 +100,10 @@ typedef enum tokenType{
 */
 
 typedef struct Token{
-  UI64 tokenKind;
+  I32 tokenKind;
   tokenType tokenType;
-  UI64 tokenRow;
-  UI64 tokenCol;
+  I32 tokenRow;
+  I32 tokenCol;
 } Token;
 
 /*
