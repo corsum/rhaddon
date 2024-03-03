@@ -86,8 +86,8 @@ extern "C"{
 */
 
 typedef struct doubleOperator{
-   int first;
-   int second;
+   int fChar;
+   int sChar;
 } doubleOperator;
 
 /*
@@ -147,15 +147,16 @@ int checkChar(const char token){
 }
 
 STR doubleChars(const char *token){
+ doubleOperator DOP = {0,0};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
      switch(token[1]){
       case '+':
-        printf("plus");
+        DOP.sChar = 0;
         break;
       case '=':
-        printf("plusek");
-        break;
+	DOP.fChar = 3;
+	break;
    }}
   if(token[0] == '-' ){
      switch(token[1]){
