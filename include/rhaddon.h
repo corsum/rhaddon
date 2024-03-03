@@ -23,7 +23,6 @@ extern "C"
 #define RHADDON_H
 #include "alias.h"
 #include "error.h"
-#include "optimizer.h"
 #include "token.h"
 #endif
 #ifdef __cplusplus
