@@ -153,61 +153,48 @@ STR doubleChars(const char *token){
      switch(token[1]){
       case '+':
         DOP.sChar = 0;
-        break;
       case '=':
 	DOP.fChar = 3;
-	break;
    }}
   if(token[0] == '-' ){
      switch(token[1]){
       case '-':
         printf("minus");
-        break;
       case '=':
         printf("minusek");
-        break;
    }}
    if(token[0] == '<' ){
      switch(token[1]){
       case '<':
         printf("minus");
-        break;
       case '=':
         printf("minusek");
-        break;
    }}
    if(token[0] == '>' ){
      switch(token[1]){
       case '>':
         printf("minus");
-        break;
       case '=':
         printf("minusek");
-        break;
    }}
    if(token[0] == '&' ){
      switch(token[1]){
       case '&':
         printf("minus");
-        break;
       case '=':
         printf("minusek");
-        break;
    }}
    if(token[0] == '|' ){
      switch(token[1]){
       case '|':
         printf("minus");
-        break;
       case '=':
         printf("minusek");
-        break;
    }}
    if(token[0] == '!' ){
      switch(token[1]){
       case '=':
         printf("minus");
-        break;
    }}
 }}
 
