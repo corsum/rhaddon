@@ -80,9 +80,10 @@ extern "C"{
 #define COMMENT     0x00 
 
 /*
+* @struct	doubleOperator
 *
-*
-*
+* @field	fChar
+* @field	sChar
 */
 
 typedef struct doubleOperator{
@@ -145,6 +146,15 @@ int checkChar(const char token){
        return PIPE;
   }
 }
+
+/*
+* @function	doubleChars
+*
+* @param	token
+*
+* @return	@struct doubleOperator
+*
+*/
 
 STR doubleChars(const char *token){
  doubleOperator DOP = {0,0};
