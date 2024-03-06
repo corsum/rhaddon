@@ -91,12 +91,6 @@ typedef struct doubleOperator{
    int sChar;
 } doubleOperator;
 
-/*
-*
-*
-*
-*/
-
 typedef enum tokenType{
   T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
 }tokenType;
