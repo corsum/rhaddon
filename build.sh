@@ -1,1 +1,1 @@
-make build && make clean
+make build-f && make clean
