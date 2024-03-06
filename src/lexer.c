@@ -51,8 +51,7 @@ char *loadFile(char *src){
   if(file == NULL){
    Error error = {"File not found",1,1,1};
    throwError(error);
-   return 0;
-  }
+     return 0;}
   fclose(file);
 }
 
