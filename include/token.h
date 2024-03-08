@@ -91,6 +91,18 @@ typedef struct doubleOperator{
    int sChar;
 } doubleOperator;
 
+
+/*
+* @enum	tokenType
+*
+* @constant	T_VAR	Token type for variables e.g int, bool
+* @constant	T_KEY	Token type for keywords e.g switch, if
+* @constant	T_OPER	Token type for operators e.g +,-
+* @constant	T_SEP	Token type for sperators e.g (,{ 
+* @constant	T_LIT	Token type for literals e.g 0.80,"Hello world!"
+* @constant	T_ID	Token type for identifiers e.g a
+*/
+
 typedef enum tokenType{
   T_VAR, T_KEY, T_OPER, T_SEP, T_LIT, T_ID
 }tokenType;
