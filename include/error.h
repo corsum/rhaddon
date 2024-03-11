@@ -29,7 +29,6 @@ extern "C" {
 #ifndef _ERROR_H
 #define _ERROR_H
 #include <stdio.h>
-#include "alias.h"
 #include "vga.h" 
 #define E_SEGF 	     (0) // Segmentation fault
 #define E_SYNT       (1) // Syntax

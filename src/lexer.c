@@ -20,7 +20,6 @@ extern "C" {
 #endif
 #include <stdio.h>
 #include <string.h>
-#include <alias.h>
 #include <token.h>
 #include <error.h>
 #include <file.h>
