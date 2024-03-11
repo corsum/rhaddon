@@ -23,6 +23,7 @@ extern "C" {
 #include <alias.h>
 #include <token.h>
 #include <error.h>
+#include <file.h>
 
 /*
 * @function splitString is used to split source file contents
@@ -36,23 +37,6 @@ extern "C" {
 char *splitString(char *src, const char delim){
   char *token[strlen(src)];
   return 0;
-}
-
-/*
-* @function loadFile
-*
-* @param src  Source file location
-*
-* @return
-*/
-
-char *loadFile(char *src){
-  FILE *file = fopen(src,"w");
-  if(file == NULL){
-   Error error = {"File not found",1,1,1};
-   throwError(error);
-     return 0;}
-  fclose(file);
 }
 
 int main(int argc, char *argv[]){
