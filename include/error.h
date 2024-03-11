@@ -30,7 +30,25 @@ extern "C" {
 #define _ERROR_H
 #include <stdio.h>
 #include <errno.h>
-#include "vga.h" 
+
+#define NONE         "\033[0m"
+#define R            "\033[0;31m"   
+#define G            "\033[0;32m"
+#define B 	     "\033[0;34m"
+#define C  	     "\033[0;36m"
+#define M	     "\033[0;35m"
+#define Y            "\033[1;32m"
+#define K	     "\033[0;30m"
+#define W	     "\033[0;37m"
+
+#define RED_L        "\033[0;31m"   
+#define GREEN_L      "\033[0;32m"
+#define BLUE_L 	     "\033[0;34m"
+#define CYAN_L       "\033[0;36m"
+#define MAGENTA_L    "\033[0;35m"
+#define YELLOW_L     "\033[1;32m"
+#define BLACK_L	     "\033[0;30m"
+#define WHITE_L	     "\033[0;37m"
 
 /*
 * @struct 	Error	
@@ -56,12 +74,12 @@ typedef struct Error{
 */
 
 int throwError(Error error){
-  printf("%sError:%s.%d.%d:%s", RED,error.src, error.cols,error.lines,NONE);
+  printf("%sError:%s.%d.%d:%s", R,error.src, error.cols,error.lines,NONE);
   switch(error.type){
    case 0:
-     printf("%sSegmentation fault: Core dumped\n", CYAN);
+     printf("%sSegmentation fault: Core dumped\n", C);
    case 6:
-     printf("%sFile not found:%s%s\n", CYAN, error.src, NONE);
+     printf("%sFile not found:%s%s\n", C, error.src, NONE);
   }
 }
 #endif
