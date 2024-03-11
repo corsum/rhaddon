@@ -49,7 +49,7 @@ extern "C" {
 */
 
 typedef struct Error{
-  STR src;
+  char *src;
   int type;
   int cols;
   int lines;

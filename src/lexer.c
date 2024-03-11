@@ -40,7 +40,7 @@ char *splitString(char *src, const char delim){
 }
 
 int main(int argc, char *argv[]){
-  STR sourceCode = loadFile(argv[1]); 
+  char *sourceCode = loadFile(argv[1]); 
   return 0;
 }
 

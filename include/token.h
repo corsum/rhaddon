@@ -22,7 +22,7 @@ extern "C"{
 #ifndef TOKEN_H
 #define TOKEN_H
 #include <string.h>
-#include "alias.h"
+#include <stdint.h>
 
 // OPERATORS
 #define AMPER       ( 0)
@@ -118,10 +118,10 @@ typedef enum tokenType{
 */
 
 typedef struct Token{
-  I32 tokenKind;
+  int32_t tokenKind;
   tokenType tokenType;
-  I32 tokenRow;
-  I32 tokenCol;
+  int32_t tokenRow;
+  int32_t tokenCol;
 } Token;
 
 /*
@@ -162,7 +162,7 @@ int checkChar(const char token){
 *
 */
 
-STR doubleChars(const char *token){
+char *doubleChars(const char *token){
  doubleOperator DOP = {0,0};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
