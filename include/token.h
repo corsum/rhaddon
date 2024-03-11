@@ -167,46 +167,40 @@ STR doubleChars(const char *token){
  if(strlen(token) == 2){
   if(token[0] == '+' ){
      switch(token[1]){
-      case '+':
-        DOP.sChar = 0;
-      case '=':
-	DOP.fChar = 3;
-   }}
+      case '+': DOP.sChar = 0;
+      case '=': DOP.fChar = 3;
+   }
+}
   if(token[0] == '-' ){
      switch(token[1]){
-      case '-':
-        printf("minus");
-      case '=':
-        printf("minusek");
-   }}
+      case '-': printf("minus");
+      case '=': printf("minusek");
+   }
+}
    if(token[0] == '<' ){
      switch(token[1]){
-      case '<':
-        printf("minus");
-      case '=':
-        printf("minusek");
-   }}
+      case '<': printf("minus");
+      case '=': printf("minusek");
+   }
+}
    if(token[0] == '>' ){
      switch(token[1]){
-      case '>':
-        printf("minus");
-      case '=':
-        printf("minusek");
-   }}
+      case '>': printf("minus");
+      case '=': printf("minusek");
+   }
+}
    if(token[0] == '&' ){
      switch(token[1]){
-      case '&':
-        printf("minus");
-      case '=':
-        printf("minusek");
-   }}
+      case '&': printf("minus");
+      case '=': printf("minusek");
+   }
+}
    if(token[0] == '|' ){
      switch(token[1]){
-      case '|':
-        printf("minus");
-      case '=':
-        printf("minusek");
-   }}
+      case '|': printf("minus");
+      case '=': printf("minusek");
+   }
+}
    if(token[0] == '!' ){
      switch(token[1]){
       case '=':
