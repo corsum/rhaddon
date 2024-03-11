@@ -29,14 +29,8 @@ extern "C" {
 #ifndef _ERROR_H
 #define _ERROR_H
 #include <stdio.h>
+#include <errno.h>
 #include "vga.h" 
-#define E_SEGF 	     (0) // Segmentation fault
-#define E_SYNT       (1) // Syntax
-#define E_LINK       (2) // Linker
-#define E_RUNT       (3) // Runtime
-#define E_SEMA       (4) // Semantic
-#define E_UNDF       (5) // Undefined
-#define E_FNF        (6) // File not found
 
 /*
 * @struct 	Error	
@@ -66,20 +60,8 @@ int throwError(Error error){
   switch(error.type){
    case 0:
      printf("%sSegmentation fault: Core dumped\n", CYAN);
-     return E_SEGF;
-   case 1:
-     return E_SYNT;
-   case 2:
-     return E_LINK; 
-   case 3:
-     return E_RUNT;
-   case 4:
-     return E_SEMA;
-   case 5:
-     return E_UNDF;
    case 6:
      printf("%sFile not found:%s%s\n", CYAN, error.src, NONE);
-     return E_FNF;
   }
 }
 #endif
