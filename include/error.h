@@ -47,7 +47,7 @@ extern "C" {
 #define C_L          "\033[0;36m"
 #define M_L    	     "\033[0;35m"
 #define Y_L          "\033[1;32m"
-#define B_L	     "\033[0;30m"
+#define K_L	     "\033[0;30m"
 #define W_L	     "\033[0;37m"
 
 /*
