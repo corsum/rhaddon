@@ -118,10 +118,10 @@ typedef enum tokenType{
 */
 
 typedef struct Token{
-  int32_t tokenKind;
+  size_t tokenKind;
   tokenType tokenType;
-  int32_t tokenRow;
-  int32_t tokenCol;
+  size_t tokenRow;
+  size_t tokenCol;
 } Token;
 
 /*
@@ -134,22 +134,21 @@ typedef struct Token{
 
 int checkChar(const char token){
    switch(token){
-     case '&':
-       return AMPER;
-     case ':':
-       return COMMA;
-     case '.':
-       return DOT;
-     case '=':
-       return EQUAL;
-     case '!':
-       return EXCLAMATION;
-     case '-':
-       return MINUS;
-     case '%':
-       return PERCENT;
-     case '|':
-       return PIPE;
+     case '&': return AMPER;
+     case ':': return COMMA;
+     case '.': return DOT;
+     case '=': return EQUAL;
+     case '!': return EXCLAMATION;
+     case '-': return MINUS;
+     case '%': return PERCENT;
+     case '|': return PIPE;
+     case '+': return PLUS;
+     case ';': return SEMICOLON;
+     case '/': return SLASH;
+     case '*': return ASTERISK;
+     case '^': return XOR;
+     case '@': return AT;
+     case '#': return HASH;
   }
 }
 
@@ -205,8 +204,10 @@ char *doubleChars(const char *token){
      switch(token[1]){
       case '=':
         printf("minus");
-   }}
-}}
+   }
+  }
+ }
+}
 
 
 #ifdef __cplusplus
