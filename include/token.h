@@ -110,10 +110,10 @@ typedef enum tokenType{
 /*
 * @struct	Token
 *
-* @field unsigned int tokenKind
-* @field
-* @field unsigned int 64 tokenRow
-* @field unsigned int 64 tokenCol
+* @field size_t tokenKind
+* @field enum   tokenType
+* @field size_t tokenRow
+* @field size_t tokenCol
 * @field
 */
 
@@ -132,8 +132,8 @@ typedef struct Token{
 * @return tokenKind 
 */
 
-int checkChar(const char token){
-   switch(token){
+int checkChar(Token token, const char symbol){
+   switch(symbol){
      case '&': return AMPER;
      case ':': return COMMA;
      case '.': return DOT;
