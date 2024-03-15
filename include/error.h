@@ -41,15 +41,6 @@ extern "C" {
 #define K	     "\033[0;30m"
 #define W	     "\033[0;37m"
 
-#define R_L          "\033[0;31m"   
-#define G_L          "\033[0;32m"
-#define B_L 	     "\033[0;34m"
-#define C_L          "\033[0;36m"
-#define M_L    	     "\033[0;35m"
-#define Y_L          "\033[1;32m"
-#define K_L	     "\033[0;30m"
-#define W_L	     "\033[0;37m"
-
 /*
 * @struct 	Error	
 *
