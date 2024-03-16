@@ -64,7 +64,7 @@ typedef struct Error{
 * @return	Error type
 */
 
-int throwError(Error error){
+void throwError(Error error){
   printf("%sError:%s.%d.%d:%s", R,error.src, error.cols,error.lines,NONE);
   switch(error.type){
    case 0:
