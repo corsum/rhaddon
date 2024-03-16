@@ -23,6 +23,8 @@ extern "C"
 #define RHADDON_H
 #include "error.h"
 #include "token.h"
+#include "lexeme.h"
+#include "file.h"
 #endif
 #ifdef __cplusplus
 }
