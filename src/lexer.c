@@ -22,6 +22,7 @@ extern "C" {
 #include <string.h>
 #include <token.h>
 #include <error.h>
+#include <lexeme.h>
 #include <file.h>
 
 /*
@@ -37,6 +38,8 @@ char *splitString(char *src, const char delim){
   char *token[strlen(src)];
   return 0;
 }
+
+Token token;
 
 int main(int argc, char *argv[]){
   char *sourceCode = loadFile(argv[1]);
