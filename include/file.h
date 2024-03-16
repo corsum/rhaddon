@@ -39,6 +39,22 @@ char *loadFile(char *src){
   fclose(file);
 }
 
+/*
+* @function writeFile
+*
+* @param src  Source file location
+*
+* @return
+*/
+
+// under construction
+
+char *writeFile(char *src, char *code){
+  FILE *file = fopen(code,"w");
+  fclose(file);
+  return 0;
+}
+
 #endif
 #ifdef __cplusplus
 }
