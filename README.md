@@ -12,11 +12,6 @@
 ## Contributors
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=corsum/rhaddon)
 
-## Contact
-- Twitter: [@popeqkacper](https://twitter.com/popeqkacper) 
-- Reddit : [kacperaan](https://reddit.com/u/kacperaan)
-- Author: [Kacper Popek](https://github.com/kacperaan)
-
 ## License
 <a href="LICENSE">GNU General Public License v3.0</a>
 
