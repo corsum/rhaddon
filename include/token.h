@@ -108,7 +108,8 @@ int checkChar(Token token, const char symbol){
 *
 */
 
-char *doubleChars(const char *token){
+char *doubleChars(Token token1, const char *token){
+ token1.tokenType = 2;
  doubleOperator DOP = {0,0};
  if(strlen(token) == 2){
   if(token[0] == '+' ){
@@ -119,8 +120,8 @@ char *doubleChars(const char *token){
 }
   if(token[0] == '-' ){
      switch(token[1]){
-      case '-': printf("minus");
-      case '=': printf("minusek");
+      case '-': DOP.sChar = 0; 
+      case '=': DOP.fChar = 3; 
    }
 }
    if(token[0] == '<' ){
