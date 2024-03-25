@@ -81,12 +81,12 @@ typedef struct Token{
 int checkChar(Token token, const char symbol){
    token.tokenType = 2;
    switch(symbol){
-     case '&': return token.tokenKind = 0;
-     case ':': return token.tokenKind = 1;
-     case '.': return DOT;
-     case '=': return EQUAL;
-     case '!': return EXCLAMATION;
-     case '-': return MINUS;
+     case '&': token.tokenKind = 0;
+     case ':': token.tokenKind = 1;
+     case '.': token.tokenKind = 2;
+     case '=': token.tokenKind = 3; 
+     case '!': token.tokenKind = 4;
+     case '-': token.tokenKind = 5; 
      case '%': return PERCENT;
      case '|': return PIPE;
      case '+': return PLUS;
