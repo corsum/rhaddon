@@ -157,10 +157,6 @@ char *doubleChars(const char *token){
 }
 
 
-char *checkAscii(){
-  
-}
-
 #ifdef __cplusplus
 }
 #endif
