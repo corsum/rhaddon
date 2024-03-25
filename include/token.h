@@ -94,7 +94,7 @@ int checkChar(Token token, const char symbol){
      case '/': token.tokenKind = 10;
      case '*': token.tokenKind = 11;
      case '^': token.tokenKind = 12;
-     case '@': token.tokenKind = 13l;
+     case '@': token.tokenKind = 13;
      case '#': token.tokenKind = 14;
   }
 }
