@@ -87,15 +87,15 @@ int checkChar(Token token, const char symbol){
      case '=': token.tokenKind = 3; 
      case '!': token.tokenKind = 4;
      case '-': token.tokenKind = 5; 
-     case '%': return PERCENT;
-     case '|': return PIPE;
-     case '+': return PLUS;
-     case ';': return SEMICOLON;
-     case '/': return SLASH;
-     case '*': return ASTERISK;
-     case '^': return XOR;
-     case '@': return AT;
-     case '#': return HASH;
+     case '%': token.tokenKind = 6;
+     case '|': token.tokenKind = 7;
+     case '+': token.tokenKind = 8;
+     case ';': token.tokenKind = 9;
+     case '/': token.tokenKind = 10;
+     case '*': token.tokenKind = 11;
+     case '^': token.tokenKind = 12;
+     case '@': token.tokenKind = 13l;
+     case '#': token.tokenKind = 14;
   }
 }
 
