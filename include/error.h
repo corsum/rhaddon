@@ -73,6 +73,11 @@ void throwError(Error error){
      printf("%sFile not found:%s%s\n", C, error.src, NONE);
   }
 }
+
+void showError(char *src, int cols){
+  printf("%sError:%s.%d",R,src,cols);
+}
+
 #endif
 #ifdef __cplusplus
 }
