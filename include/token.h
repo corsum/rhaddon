@@ -108,51 +108,22 @@ int checkChar(Token token, const char symbol){
 *
 */
 
-char *doubleChars(Token token1, const char *token){
- token1.tokenType = 2;
+char *doubleChars(Token token, const char chr){
+ token.tokenType = 2;
  doubleOperator DOP = {0,0};
- if(strlen(token) == 2){
-  if(token[0] == '+' ){
-     switch(token[1]){
-      case '+': DOP.sChar = 0;
+ if(strlen(chr) == 2){
+  if(token[0] == '&' ){
+     DOP.fChar = 0;
+     switch(chr[1]){
+      case '&': DOP.sChar = 0;
       case '=': DOP.sChar = 3;
-   }
-}
+     }
+  }
   if(token[0] == '-' ){
      switch(token[1]){
       case '-': DOP.sChar = 5; 
       case '=': DOP.sChar = 3; 
-   }
-}
-   if(token[0] == '<' ){
-     switch(token[1]){
-      case '<': DOP.sChar = 0;
-      case '=': DOP.sChar = 3;
-   }
-}
-   if(token[0] == '>' ){
-     switch(token[1]){
-      case '>': DOP.sChar = 0;
-      case '=': DOP.sChar = 3;
-   }
-}
-   if(token[0] == '&' ){
-     switch(token[1]){
-      case '&': DOP.sChar = 0;
-      case '=': DOP.sChar = 3;
-   }
-}
-   if(token[0] == '|' ){
-     switch(token[1]){
-      case '|': DOP.sChar = 7;
-      case '=': DOP.sChar = 3;
-   }
-}
-   if(token[0] == '!' ){
-     switch(token[1]){
-      case '=':
-        DOP.sChar = 3;
-   }
+     }
   }
  }
 }
