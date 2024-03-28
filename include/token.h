@@ -151,7 +151,7 @@ char *doubleChars(Token token1, const char *token){
    if(token[0] == '!' ){
      switch(token[1]){
       case '=':
-        printf("minus");
+        DOP.sChar = 3;
    }
   }
  }
