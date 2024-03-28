@@ -74,6 +74,13 @@ void throwError(Error error){
   }
 }
 
+/*
+* @function showError is used to print error messages
+*
+* @param src message to be shown
+* @param cols number of columns
+*/
+
 void showError(char *src, int cols){
   printf("%sError:%s.%d",R,src,cols);
 }
