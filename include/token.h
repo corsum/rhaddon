@@ -119,9 +119,10 @@ char *doubleChars(Token token, const char chr){
       case '=': DOP.sChar = 3;
      }
   }
-  if(token[0] == '-' ){
+  if(token[0] == ':' ){
+     DOP.fChar = 1;
      switch(token[1]){
-      case '-': DOP.sChar = 5; 
+      case ':': DOP.sChar = 1; 
       case '=': DOP.sChar = 3; 
      }
   }
