@@ -126,8 +126,8 @@ char *doubleChars(Token token1, const char *token){
 }
    if(token[0] == '<' ){
      switch(token[1]){
-      case '<': printf("minus");
-      case '=': printf("minusek");
+      case '<': DOP.sChar = 0;
+      case '=': DOP.fChar = 3;
    }
 }
    if(token[0] == '>' ){
