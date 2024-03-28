@@ -201,6 +201,11 @@ char *doubleChars(Token token, const char chr){
  }
 }
 
+char *checkCharr(const char f, const char s, const char t){
+  DOP dop;
+  return 0;
+}
+
 
 #ifdef __cplusplus
 }
