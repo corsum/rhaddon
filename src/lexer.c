@@ -43,7 +43,9 @@ Token token;
 
 int main(int argc, char *argv[]){
   char *sourceCode = loadFile(argv[1]);
-  checkCharr("+++");
+  doubleChars(token, "&&");
+  doubleChars(token, "&=");
+  doubleChars(token, "&");
   return 0;
 }
 

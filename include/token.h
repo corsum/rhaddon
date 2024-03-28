@@ -115,17 +115,19 @@ char *doubleChars(Token token, const char *chr){
   if(chr[0] == '&'){
      DOP.fChar = 0;
      switch(chr[1]){
-      case '&': DOP.sChar = 0;
-      case '=': DOP.sChar = 3;
+      case '&': DOP.sChar = 0; printf("&&\n"); break;
+      case '=': DOP.sChar = 3; printf("&=\n"); break;
      }
   }
  }
+
+else if(strlen(chr) == 1){
+if(chr[0] == '&'){
+   printf("wowowow\n");
+ }
 }
 
-char *checkCharr(char *oper){
-  return 0;
 }
-
 
 #ifdef __cplusplus
 }
