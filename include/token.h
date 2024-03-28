@@ -108,11 +108,11 @@ int checkChar(Token token, const char symbol){
 *
 */
 
-char *doubleChars(Token token, const char chr){
+char *doubleChars(Token token, const char *chr){
  token.tokenType = 2;
  doubleOperator DOP = {0,0};
  if(strlen(chr) == 2){
-  if(token[0] == '&' ){
+  if(chr[0] == '&'){
      DOP.fChar = 0;
      switch(chr[1]){
       case '&': DOP.sChar = 0;
@@ -122,11 +122,7 @@ char *doubleChars(Token token, const char chr){
  }
 }
 
-char *checkCharr(Token token, const char oper[3]){
-  doubleOperator DOP;
-  printf("%s\n", oper[0]);
-  printf("%s\n", oper[1]);
-  printf("%s\n", oper[2]);
+char *checkCharr(char *oper){
   return 0;
 }
 
