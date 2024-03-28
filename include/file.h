@@ -34,7 +34,8 @@ char *loadFile(char *src){
   FILE *file = fopen(src,"w");
   if(file == NULL){
    showError("FNF",1);
-     return 0;}
+     return 0;
+    }
   fclose(file);
 }
 
@@ -50,6 +51,10 @@ char *loadFile(char *src){
 
 char *writeFile(char *src, char *code){
   FILE *file = fopen(code,"w");
+  if(file == NULL){
+   showError("FNF",1);
+     return 0;
+    }
   fclose(file);
   return 0;
 }
