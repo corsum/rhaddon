@@ -119,90 +119,14 @@ char *doubleChars(Token token, const char chr){
       case '=': DOP.sChar = 3;
      }
   }
-  if(token[0] == ':' ){
-     DOP.fChar = 1;
-     switch(token[1]){
-      case ':': DOP.sChar = 1; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '=' ){
-     DOP.fChar = 3;
-     switch(token[1]){
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '!' ){
-     DOP.fChar = 4;
-     switch(token[1]){
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '-' ){
-     DOP.fChar = 5;
-     switch(token[1]){
-      case '-': DOP.sChar = 5; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '%' ){
-     DOP.fChar = 6;
-     switch(token[1]){
-      case '%': DOP.sChar = 6; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '|' ){
-     DOP.fChar = 7;
-     switch(token[1]){
-      case '|': DOP.sChar = 7; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '+' ){
-     DOP.fChar = 8;
-     switch(token[1]){
-      case '+': DOP.sChar = 8; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '/' ){
-     DOP.fChar = 10;
-     switch(token[1]){
-      case '/': DOP.sChar = 10; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '*' ){
-     DOP.fChar = 11;
-     switch(token[1]){
-      case '*': DOP.sChar = 11; 
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '^' ){
-     DOP.fChar = 12;
-     switch(token[1]){
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '@' ){
-     DOP.fChar = 13;
-     switch(token[1]){
-      case '=': DOP.sChar = 3; 
-     }
-  }
-  if(token[0] == '#' ){
-     DOP.fChar = 14;
-     switch(token[1]){
-      case '=': DOP.sChar = 3; 
-     }
-  }
  }
 }
 
-char *checkCharr(const char f, const char s, const char t){
-  DOP dop;
+char *checkCharr(Token token, const char oper[3]){
+  doubleOperator DOP;
+  printf("%s\n", oper[0]);
+  printf("%s\n", oper[1]);
+  printf("%s\n", oper[2]);
   return 0;
 }
 
