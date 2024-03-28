@@ -42,39 +42,6 @@ extern "C" {
 #define W	     "\033[0;37m"
 
 /*
-* @struct 	Error	
-*
-* @field src    Name of the file where the error is located
-* @field type   Type of the error presented with int
-* @field cols   Column when the error is located
-* @field lines  Line when the error is located
-*/
-
-typedef struct Error{
-  char *src;
-  int type;
-  int cols;
-  int lines;
-}Error;
-
-/* 
-* @function throwError is used to print error messages
-* 
-* @param Error  @struct above 
-* @return	Error type
-*/
-
-void throwError(Error error){
-  printf("%sError:%s.%d.%d:%s", R,error.src, error.cols,error.lines,NONE);
-  switch(error.type){
-   case 0:
-     printf("%sSegmentation fault: Core dumped\n", C);
-   case 6:
-     printf("%sFile not found:%s%s\n", C, error.src, NONE);
-  }
-}
-
-/*
 * @function showError is used to print error messages
 *
 * @param src message to be shown
